@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DSDT</key>
+	<string>/Extra/DSDT.aml</string>
+	<key>Default Partition</key>
+	<string>hd(0,2)</string>
+	<key>DropSSDT</key>
+	<string>Yes</string>
+	<key>EnableC2State</key>
+	<string>No</string>
+	<key>EnableC3State</key>
+	<string>No</string>
+	<key>EnableC4State</key>
+	<string>No</string>
+	<key>EthernetBuiltIn</key>
+	<string>Yes</string>
+	<key>GenerateCStates</key>
+	<string>No</string>
+	<key>GeneratePStates</key>
+	<string>No</string>
+	<key>Hide Partition</key>
+	<string>hd(1,4) hd(1,6)</string>
+	<key>Kernel</key>
+	<string>mach_kernel</string>
+	<key>Legacy Logo</key>
+	<string>Yes</string>
+	<key>SMBIOS</key>
+	<string>/Extra/smbios.plist</string>
+	<key>SystemType</key>
+	<string>2</string>
+	<key>Theme</key>
+	<string>Choose_Your_OS</string>
+	<key>Timeout</key>
+	<string>1</string>
+	<key>USBLegacyOff</key>
+	<string>Yes</string>
+	<key>UseKernelCache</key>
+	<string>Yes</string>
+	<key>device-properties</key>
+	<string>9d0000000100000002000000520000000100000002010c00d041030a000000000101060000027fff04002c0000004100410050004c002c00690067002d0070006c006100740066006f0072006d002d0069006400000008000000030066013f0000000100000002010c00d041030a0000000001010600031c0101060002007fff0400160000006200750069006c0074002d0069006e0000000500000001</string>
+</dict>
+</plist>

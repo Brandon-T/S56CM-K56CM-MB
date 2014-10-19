@@ -1,0 +1,28 @@
+CPUID CPU Name	Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz
+CPUID Revision	000306A9h
+North Bridge	Intel Ivy Bridge-MB IMC
+VT-d	Supported
+
+
+
+Max Turbo Boost Multipliers	1C: 30x, 2C: 28x
+Enhanced SpeedStep Technology (EIST, ESS)	Supported, Enabled
+Turbo Boost	Supported, Enabled
+
+Tjmax Temperature	105 °C  (221 °F)
+
+Graphics Controller Type	Intel HD Graphics 4000
+
+BIOS Type	AMI
+BIOS Version	K56CM.207
+
+Multiprocessors / Cores	2 / 96
+
+
+Atheros AR9285 802.11b/g/n Wireless Network Adapter	PCI
+Realtek RTL8168/8111 PCI-E Gigabit Ethernet Adapter (PHY: Realtek RTL8211/8212)	PCI
+
+
+Qualcomm Atheros AR3011 Bluetooth 3.0
+Hardware ID	USB\VID_0CF3&PID_3002&REV_0001
+

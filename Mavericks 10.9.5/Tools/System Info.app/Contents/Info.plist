@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>CFBundleName</key>
+	<string>System Info</string>
+	<key>CFBundleIdentifier</key>
+	<string>kexts.KextsApp</string>
+	<key>CFBundleVersion</key>
+	<string>0.4</string>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<string>true</string>
+	<key>CFBundleExecutable</key>
+	<string>JavaApplicationStub</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleIconFile</key>
+	<string>System Info.icns</string>
+	<key>Java</key>
+	<dict>
+		<key>MainClass</key>
+		<string>kexts.KextsApp</string>
+		<key>JVMVersion</key>
+		<string>1.6+</string>
+		<key>ClassPath</key>
+			<array>
+			<string>$JAVAROOT/Kexts.jar</string>
+			<string>$JAVAROOT/appframework-1.0.3.jar</string>
+			<string>$JAVAROOT/swing-worker-1.1.jar</string>
+			</array>
+	</dict>
+</dict>
+</plist>
