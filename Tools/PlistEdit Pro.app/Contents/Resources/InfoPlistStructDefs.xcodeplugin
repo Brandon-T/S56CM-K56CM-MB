@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin name="AppleScript Plist Editor Plugin" id="" version="1.0" xmlns:plisteditpro="http://www.fatcatsoftware.com/plisteditpro">
+    <extension point="com.apple.xcode.plist.structure-definition" name="Info.plist" id="com.apple.xcode.plist.structure-definition.info-plist">
+        <definition name="_root_" localizedString="Information Property List" class="Dictionary">
+            <dictionaryKeys>
+                <key name="LSApplicationCategoryType" localizedString="Application Category" class="ApplicationCategory" use="required"></key>
+                <key name="LSUIPresentationMode" localizedString="Application UI Presentation Mode" class="PresentationMode" use="optional"></key>
+                <key name="UIApplicationExitsOnSuspend" localizedString="Application does not run in background" class="Boolean" use="optional"></key>
+                <key name="ATSApplicationFontsPath" localizedString="Application fonts resource path" class="String" use="optional"></key>
+                <key name="LSHasLocalizedDisplayName" localizedString="Application has localized display name" class="Boolean" use="optional"></key>
+                <key name="LSUIElement" localizedString="Application is agent (UIElement)" class="Boolean" use="optional"></key>
+                <key name="LSBackgroundOnly" localizedString="Application is background only" class="Boolean" use="optional"></key>
+                <key name="LSVisibleInClassic" localizedString="Application is visible in Classic" class="Boolean" use="deprecated"></key>
+                <key name="LSPrefersCarbon" localizedString="Application prefers Carbon environment" class="Boolean" use="deprecated"></key>
+                <key name="LSPrefersClassic" localizedString="Application prefers Classic environment" class="Boolean" use="deprecated"></key>
+                <key name="UINewsstandApp" localizedString="Application presents content in Newsstand" class="Boolean" use="optional"></key>
+                <key name="LSMultipleInstancesProhibited" localizedString="Application prohibits multiple instances" class="Boolean" use="optional"></key>
+                <key name="LSRequiresCarbon" localizedString="Application requires Carbon environment" class="Boolean" use="deprecated"></key>
+                <key name="LSRequiresClassic" localizedString="Application requires Classic environment" class="Boolean" use="deprecated"></key>
+                <key name="LSRequiresIPhoneOS" localizedString="Application requires iPhone environment" class="Boolean" use="optional"></key>
+                <key name="LSRequiresNativeExecution" localizedString="Application requires native environment" class="Boolean" use="optional"></key>
+                <key name="LSGetAppDiedEvents" localizedString="Application should get App Died events" class="Boolean" use="optional"></key>
+                <key name="UIFileSharingEnabled" localizedString="Application supports iTunes file sharing" class="Boolean" use="optional"></key>
+                <key name="UIRequiresPersistentWiFi" localizedString="Application uses Wi-Fi" class="Boolean" use="optional"></key>
+                <key name="LSArchitecturePriority" localizedString="Architecture priority" class="Architectures" use="optional"></key>
+                <key name="CFBundlePackageType" localizedString="Bundle OS Type code" class="String" use="optional"></key>
+                <key name="CFBundleSignature" localizedString="Bundle creator OS Type code" class="String" use="optional"></key>
+                <key name="CFBundleDisplayName" localizedString="Bundle display name" class="String" use="default"></key>
+                <key name="CFBundleIdentifier" localizedString="Bundle identifier" class="String" use="required"></key>
+                <key name="CFBundleName" localizedString="Bundle name" class="String" use="default"></key>
+                <key name="CFBundleVersion" localizedString="Bundle version" class="String" use="default"></key>
+                <key name="CFBundleShortVersionString" localizedString="Bundle versions string, short" class="String" use="default"></key>
+                <key name="SMAuthorizedClients" localizedString="Clients allowed to add and remove tool" class="StringArray" use="optional"></key>
+                <key name="NSJavaNeeded" localizedString="Cocoa Java application" class="Boolean" use="deprecated"></key>
+                <key name="NSHumanReadableCopyright" localizedString="Copyright (human-readable)" class="String" use="optional"></key>
+                <key name="NSPersistentStoreTypeKey" localizedString="Core Data persistent store type" class="PersistentStoreCoordinatorTypes" use="optional"></key>
+                <key name="NSDockTilePlugIn" localizedString="Dock Tile plugin path" class="String" use="optional"></key>
+                <key name="CFBundleDocumentTypes" localizedString="Document types" class="DocumentTypeArray" use="optional"></key>
+                <key name="QuartzGLEnable" localizedString="Enable Quartz GL" class="Boolean" use="optional"></key>
+                <key name="LSEnvironment" localizedString="Environment variables" class="Dictionary" use="optional"></key>
+                <key name="LSExecutableArchitectures" localizedString="Executable architectures" class="Architectures" use="optional"></key>
+                <key name="CFBundleExecutable" localizedString="Executable file" class="String" use="required"></key>
+                <key name="UTExportedTypeDeclarations" localizedString="Exported Type UTIs" class="UTITypes" use="optional"></key>
+                <key name="LSFileQuarantineEnabled" localizedString="File quarantine enabled" class="Boolean" use="optional"></key>
+                <key name="UIAppFonts" localizedString="Fonts provided by application" class="StringArray" use="optional"></key>
+                <key name="GKGameCenterBadgingDisabled" localizedString="Game Center: Badging Disabled" class="Boolean" use="optional"></key>
+                <key name="GKShowChallengeBanners" localizedString="Game Center: Show Challenge Banners" class="String" use="optional"></key>
+                <key name="CFBundleGetInfoString" localizedString="Get Info string" class="String" use="default"></key>
+                <key name="CFBundleHelpBookFolder" localizedString="Help Book directory name" class="String" use="optional"></key>
+                <key name="CFBundleHelpBookName" localizedString="Help Book identifier" class="String" use="optional"></key>
+                <key name="CFAppleHelpAnchor" localizedString="Help file" class="String" use="optional"></key>
+                <key name="NSHighResolutionCapable" localizedString="High Resolution Capable" class="Boolean" use="optional"></key>
+                <key name="UIPrerenderedIcon" localizedString="Icon already includes gloss effects" class="Boolean" use="optional"></key>
+                <key name="CFBundleIconFile" localizedString="Icon file" class="String" use="optional"></key>
+                <key name="CFBundleIconFiles" localizedString="Icon files" class="StringArray" use="optional"></key>
+                <key name="CFBundleIcons" localizedString="Icon files (iOS 5)" class="CFBundleIcons" use="optional"></key>
+                <key name="UTImportedTypeDeclarations" localizedString="Imported Type UTIs" class="UTITypes" use="optional"></key>
+                <key name="CFBundleInfoDictionaryVersion" localizedString="InfoDictionary version" class="InfoDictVersion" use="required"></key>
+                <key name="UIInterfaceOrientation" localizedString="Initial interface orientation" class="InterfaceOrientations" use="optional"></key>
+                <key name="APInstallerURL" localizedString="Installation directory base file URL" class="String" use="optional"></key>
+                <key name="APFiles" localizedString="Installation files" class="APFilesDict" use="optional"></key>
+                <key name="NSJavaPath" localizedString="Java classpaths" class="StringArray" use="deprecated"></key>
+                <key name="NSJavaRoot" localizedString="Java root directory" class="String" use="optional"></key>
+                <key name="UILaunchImageFile" localizedString="Launch image" class="String" use="optional"></key>
+                <key name="UILaunchImageFile~ipad" localizedString="Launch image (iPad)" class="String" use="optional"></key>
+                <key name="UILaunchImageFile~iphone" localizedString="Launch image (iPhone)" class="String" use="optional"></key>
+                <key name="CFBundleDevelopmentRegion" localizedString="Localization native development region" class="RegionCodes" use="optional"></key>
+                <key name="CFBundleLocalizations" localizedString="Localizations" class="LanguageCodesArray" use="optional"></key>
+                <key name="CFBundleAllowMixedLocalizations" localizedString="Localized resources can be mixed" class="Boolean" use="optional"></key>
+                <key name="NSMainNibFile" localizedString="Main nib file base name" class="String" use="optional"></key>
+                <key name="NSMainNibFile~ipad" localizedString="Main nib file base name (iPad)" class="String" use="optional"></key>
+                <key name="NSMainNibFile~iphone" localizedString="Main nib file base name (iPhone)" class="String" use="optional"></key>
+                <key name="UIMainStoryboardFile" localizedString="Main storyboard file base name" class="String" use="optional"></key>
+                <key name="UIMainStoryboardFile~ipad" localizedString="Main storyboard file base name (iPad)" class="String" use="optional"></key>
+                <key name="UIMainStoryboardFile~iphone" localizedString="Main storyboard file base name (iPhone)" class="String" use="optional"></key>
+                <key name="MKDirectionsApplicationSupportedModes" localizedString="Maps routing app supported modes" class="MKDirectionsApplicationSupportedModesList" use="optional"></key>
+                <key name="LSMinimumSystemVersion" localizedString="Minimum system version" class="VersionString" use="optional"></key>
+                <key name="LSMinimumSystemVersionByArchitecture" localizedString="Minimum system versions, per-architecture" class="MinSystemVersDict" use="optional"></key>
+                <key name="NSExtension" localizedString="NSExtension" class="NSExtension" use="optional"></key>
+                <key name="CFPlugInDynamicRegisterFunction" localizedString="Plug-in dynamic registration function name" class="String" use="optional"></key>
+                <key name="CFPlugInFactories" localizedString="Plug-in factory interfaces" class="Dictionary" use="optional"></key>
+                <key name="CFPlugInDynamicRegistration" localizedString="Plug-in should be registered dynamically" class="Boolean" use="optional"></key>
+                <key name="CFPlugInTypes" localizedString="Plug-in types" class="Dictionary" use="optional"></key>
+                <key name="CFPlugInUnloadFunction" localizedString="Plug-in unload function name" class="String" use="optional"></key>
+                <key name="NSPrefPaneIconFile" localizedString="Preference Pane icon file" class="String" use="optional"></key>
+                <key name="NSPrefPaneIconLabel" localizedString="Preference Pane icon label" class="String" use="optional"></key>
+                <key name="com.apple.PreferenceSync.ExcludeSyncKeys" localizedString="Preferences sync exclusion keys" class="StringArray" use="deprecated"></key>
+                <key name="NSPrincipalClass" localizedString="Principal class" class="String" use="optional"></key>
+                <key name="NSBluetoothPeripheralUsageDescription" localizedString="Privacy - Bluetooth Peripheral Usage Description" class="String" use="optional"></key>
+                <key name="NSCalendarsUsageDescription" localizedString="Privacy - Calendars Usage Description" class="String" use="optional"></key>
+                <key name="NSCameraUsageDescription" localizedString="Privacy - Camera Usage Description" class="String" use="optional"></key>
+                <key name="NSContactsUsageDescription" localizedString="Privacy - Contacts Usage Description" class="String" use="optional"></key>
+                <key name="NSLocationUsageDescription" localizedString="Privacy - Location Usage Description" class="String" use="optional"></key>
+                <key name="NSMicrophoneUsageDescription" localizedString="Privacy - Microphone Usage Description" class="String" use="optional"></key>
+                <key name="NSMotionUsageDescription" localizedString="Privacy - Motion Usage Description" class="String" use="optional"></key>
+                <key name="NSPhotoLibraryUsageDescription" localizedString="Privacy - Photo Library Usage Description" class="String" use="optional"></key>
+                <key name="NSRemindersUsageDescription" localizedString="Privacy - Reminders Usage Description" class="String" use="optional"></key>
+                <key name="QLNeedsToBeRunInMainThread" localizedString="Quick Look needs to be run in main thread" class="QLNeedsToBeRunInMainThreadDef" use="optional"></key>
+                <key name="QLPreviewHeight" localizedString="Quick Look preview height" class="QLPreviewHeightDef" use="optional"></key>
+                <key name="QLPreviewWidth" localizedString="Quick Look preview width" class="QLPreviewWidthDef" use="optional"></key>
+                <key name="QLSupportsConcurrentRequests" localizedString="Quick Look supports concurrent requests" class="QLSupportsConcurrentRequestsDef" use="optional"></key>
+                <key name="QLThumbnailMinimumSize" localizedString="Quick Look thumbnail minimum size" class="QLThumbnailMinimumSizeDef" use="optional"></key>
+                <key name="UIViewEdgeAntialiasing" localizedString="Renders with edge antialiasing" class="Boolean" use="optional"></key>
+                <key name="UIViewGroupOpacity" localizedString="Renders with group opacity" class="Boolean" use="optional"></key>
+                <key name="UIBackgroundModes" localizedString="Required background modes" class="BackgroundModeArray" use="optional"></key>
+                <key name="UIRequiredDeviceCapabilities" localizedString="Required device capabilities" class="StringArray" use="optional"></key>
+                <key name="CSResourcesFileMapped" localizedString="Resources should be file-mapped" class="Boolean" use="optional"></key>
+                <key name="NSAppleScriptEnabled" localizedString="Scriptable" class="Boolean" use="optional"></key>
+                <key name="OSAScriptingDefinition" localizedString="Scripting definition file name" class="String" use="optional"></key>
+                <key name="NSServices" localizedString="Services" class="ServicesArray" use="optional"></key>
+                <key name="UIStatusBarHidden" localizedString="Status bar is initially hidden" class="Boolean" use="optional"></key>
+                <key name="UIStatusBarStyle" localizedString="Status bar style" class="StatusBarStyles" use="optional"></key>
+                <key name="UIStatusBarTintParameters" localizedString="Status bar tinting parameters" class="UIStatusBarTintingDictionary" use="optional"></key>
+                <key name="UISupportedExternalAccessoryProtocols" localizedString="Supported external accessory protocols" class="StringArray" use="optional"></key>
+                <key name="UISupportedInterfaceOrientations" localizedString="Supported interface orientations" class="InterfaceOrientationArray" use="optional"></key>
+                <key name="UISupportedInterfaceOrientations~ipad" localizedString="Supported interface orientations (iPad)" class="InterfaceOrientationArray" use="optional"></key>
+                <key name="UISupportedInterfaceOrientations~iphone" localizedString="Supported interface orientations (iPhone)" class="InterfaceOrientationArray" use="optional"></key>
+                <key name="NSSupportsAutomaticTermination" localizedString="Supports automatic termination" class="Boolean" use="optional"></key>
+                <key name="NSSupportsSuddenTermination" localizedString="Supports sudden termination" class="Boolean" use="optional"></key>
+                <key name="SMPrivilegedExecutables" localizedString="Tools owned after installation" class="Dictionary" use="optional"></key>
+                <key name="CFBundleURLTypes" localizedString="URL types" class="URLTypeArray" use="optional"></key>
+                <key name="NSUbiquitousDisplaySet" localizedString="Ubiquitous display set" class="String" use="optional"></key>
+                <key name="NSUserNotificationAlertStyle" localizedString="User notification alert style" class="UserNotificationAlertStyle" use="optional"></key>
+                <key name="UIViewControllerBasedStatusBarAppearance" localizedString="View controller-based status bar appearance" class="Boolean" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="APFilesDict" localizedString="APFilesDict" class="Dictionary" identifyingKey="APFileName">
+            <dictionaryKeys>
+                <key name="APDisplayedAsContainer" localizedString="Display with folder icon" class="Boolean" use="optional"></key>
+                <key name="APFileDestinationPath" localizedString="File destination path" class="String" use="required"></key>
+                <key name="APInstallAction" localizedString="File install action" class="APInstallActionStrings" use="optional"></key>
+                <key name="APFileDescriptionKey" localizedString="Install file description text" class="String" use="required"></key>
+                <key name="APFileName" localizedString="Install file name" class="String" use="required"></key>
+                <key name="APFileSourcePath" localizedString="Install file source path" class="String" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="APInstallActionStrings" localizedString="APInstallActionStrings" class="String" default="Copy">
+            <allowableValues>
+                <value name="Copy" localizedString="Copy"></value>
+                <value name="Open" localizedString="Open"></value>
+            </allowableValues>
+        </definition>
+        <definition name="DocumentTypeArray" localizedString="DocumentTypeArray" class="Array" arrayElementClass="DocumentTypeDict"></definition>
+        <definition name="DocumentTypeDict" localizedString="DocumentTypeDict" class="Dictionary" identifyingKey="CFBundleTypeName">
+            <dictionaryKeys>
+                <key name="CFBundleTypeExtensions" localizedString="CFBundleTypeExtensions" class="StringArray" use="optional"></key>
+                <key name="NSDocumentClass" localizedString="Cocoa NSDocument Class" class="String" use="optional"></key>
+                <key name="LSItemContentTypes" localizedString="Document Content Type UTIs" class="StringArray" use="optional"></key>
+                <key name="CFBundleTypeMIMETypes" localizedString="Document MIME Types" class="StringArray" use="optional"></key>
+                <key name="CFBundleTypeOSTypes" localizedString="Document OS Types" class="StringArray" use="optional"></key>
+                <key name="CFBundleTypeName" localizedString="Document Type Name" class="String" use="required"></key>
+                <key name="LSTypeIsPackage" localizedString="Document is a package or bundle" class="Boolean" use="optional"></key>
+                <key name="NSExportableAs" localizedString="Exportable As Document Type Names (Deprecated)" class="StringArray" use="optional"></key>
+                <key name="NSExportableTypes" localizedString="Exportable Type UTIs" class="StringArray" use="optional"></key>
+                <key name="LSHandlerRank" localizedString="Handler rank" class="HandlerRank" use="default"></key>
+                <key name="CFBundleTypeIconFile" localizedString="Icon File Name" class="String" use="optional"></key>
+                <key name="CFBundleTypeRole" localizedString="Role" class="CFBundleTypeRoles" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="HandlerRank" localizedString="HandlerRank" class="String" default="Default">
+            <allowableValues>
+                <value name="Owner" localizedString="Owner"></value>
+                <value name="Default" localizedString="Default"></value>
+                <value name="Alternate" localizedString="Alternate"></value>
+                <value name="None" localizedString="None"></value>
+            </allowableValues>
+        </definition>
+        <definition name="CFBundleTypeRoles" localizedString="CFBundleTypeRoles" class="String" default="None">
+            <allowableValues>
+                <value name="Editor" localizedString="Editor"></value>
+                <value name="Viewer" localizedString="Viewer"></value>
+                <value name="Shell" localizedString="Shell"></value>
+                <value name="QLGenerator" localizedString="Quick Look Generator"></value>
+                <value name="None" localizedString="None"></value>
+            </allowableValues>
+        </definition>
+        <definition name="InfoDictVersion" localizedString="InfoDictVersion" class="String" default="6.0"></definition>
+        <definition name="BackgroundModeArray" localizedString="BackgroundModeArray" class="Array" arrayElementClass="BackgroundMode"></definition>
+        <definition name="BackgroundMode" localizedString="BackgroundMode" class="String" default="">
+            <allowableValues>
+                <value name="audio" localizedString="App plays audio or streams audio/video using AirPlay"></value>
+                <value name="location" localizedString="App registers for location updates"></value>
+                <value name="voip" localizedString="App provides Voice over IP services"></value>
+                <value name="newsstand-content" localizedString="App processes Newsstand Kit downloads"></value>
+                <value name="external-accessory" localizedString="App communicates with an accessory"></value>
+                <value name="bluetooth-central" localizedString="App communicates using CoreBluetooth"></value>
+                <value name="bluetooth-peripheral" localizedString="App shares data using CoreBluetooth"></value>
+                <value name="fetch" localizedString="App downloads content from the network"></value>
+                <value name="remote-notification" localizedString="App downloads content in response to push notifications"></value>
+            </allowableValues>
+        </definition>
+        <definition name="URLTypeArray" localizedString="URLTypeArray" class="Array" arrayElementClass="URLType"></definition>
+        <definition name="URLType" localizedString="URLType" class="Dictionary" identifyingKey="CFBundleTypeRole">
+            <dictionaryKeys>
+                <key name="CFBundleURLIconFile" localizedString="Document Icon File Name" class="String" use="optional"></key>
+                <key name="CFBundleTypeRole" localizedString="Document Role" class="CFBundleTypeRoles" use="optional"></key>
+                <key name="CFBundleURLSchemes" localizedString="URL Schemes" class="StringArray" use="optional"></key>
+                <key name="CFBundleURLName" localizedString="URL identifier" class="String" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="MinSystemVersDict" localizedString="MinSystemVersDict" class="Dictionary">
+            <dictionaryKeys>
+                <key name="i386" localizedString="Intel (32-bit)" class="VersionString" use="default"></key>
+                <key name="x86_64" localizedString="Intel (64-bit)" class="VersionString" use="optional"></key>
+                <key name="ppc" localizedString="PowerPC (32-bit)" class="VersionString" use="optional"></key>
+                <key name="ppc64" localizedString="PowerPC (64-bit)" class="VersionString" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="PresentationMode" localizedString="PresentationMode" class="Number" default="0">
+            <allowableValues>
+                <value name="0" localizedString="Normal"></value>
+                <value name="1" localizedString="Content suppressed"></value>
+                <value name="2" localizedString="Content hidden"></value>
+                <value name="3" localizedString="All hidden"></value>
+                <value name="4" localizedString="All suppressed"></value>
+            </allowableValues>
+        </definition>
+        <definition name="PersistentStoreCoordinatorTypes" localizedString="PersistentStoreCoordinatorTypes" class="String" default="">
+            <allowableValues>
+                <value name="NSSQLiteStoreType" localizedString="SQLite"></value>
+                <value name="NSXMLStoreType" localizedString="XML"></value>
+                <value name="NSBinaryStoreType" localizedString="Binary"></value>
+                <value name="NSInMemoryStoreType" localizedString="Memory"></value>
+            </allowableValues>
+        </definition>
+        <definition name="ServicesArray" localizedString="ServicesArray" class="Array" arrayElementClass="ServiceDict"></definition>
+        <definition name="ServiceDict" localizedString="ServiceDict" class="Dictionary" identifyingKey="NSMessage">
+            <dictionaryKeys>
+                <key name="NSPortName" localizedString="Incoming service port name" class="String" use="optional"></key>
+                <key name="NSMessage" localizedString="Instance method name" class="String" use="required"></key>
+                <key name="NSMenuItem" localizedString="Menu" class="ServicesMenuItem" use="required"></key>
+                <key name="NSKeyEquivalent" localizedString="Menu key equivalent" class="ServicesKeyEquivalent" use="optional"></key>
+                <key name="NSReturnTypes" localizedString="Return Types" class="StringArray" use="optional"></key>
+                <key name="NSSendTypes" localizedString="Send Types" class="StringArray" use="optional"></key>
+                <key name="NSTimeout" localizedString="Timeout value (in milliseconds)" class="String" use="optional"></key>
+                <key name="NSUserData" localizedString="User Data" class="*" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="ServicesMenuItem" localizedString="ServicesMenuItem" class="Dictionary">
+            <dictionaryKeys>
+                <key name="default" localizedString="Menu item title" class="String" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="ServicesKeyEquivalent" localizedString="ServicesKeyEquivalent" class="Dictionary">
+            <dictionaryKeys>
+                <key name="default" localizedString="Key equivalent (with command and shift)" class="String" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="UTITypes" localizedString="UTITypes" class="Array" arrayElementClass="UTIType"></definition>
+        <definition name="UTIType" localizedString="UTIType" class="Dictionary" identifyingKey="UTTypeIdentifier">
+            <dictionaryKeys>
+                <key name="UTTypeSize320IconFile" localizedString="320 x 320 icon file name" class="String" use="optional"></key>
+                <key name="UTTypeSize64IconFile" localizedString="64 x 64 icon file name" class="String" use="optional"></key>
+                <key name="UTTypeConformsTo" localizedString="Conforms to UTIs" class="StringArray" use="required"></key>
+                <key name="UTTypeDescription" localizedString="Description" class="String" use="optional"></key>
+                <key name="UTTypeTagSpecification" localizedString="Equivalent Types" class="Dictionary" use="required"></key>
+                <key name="UTTypeIconFile" localizedString="Icon file name" class="String" use="optional"></key>
+                <key name="UTTypeIdentifier" localizedString="Identifier" class="String" use="required"></key>
+                <key name="UTTypeReferenceURL" localizedString="Reference URL" class="String" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="LanguageCodesArray" localizedString="LanguageCodesArray" class="Array" arrayElementClass="LanguageCodes"></definition>
+        <definition name="LanguageCodes" localizedString="LanguageCodes" class="String" default="en">
+            <allowableValues>
+                <value name="zh" localizedString="Chinese"></value>
+                <value name="zh_CN" localizedString="Chinese (simplified)"></value>
+                <value name="zh_TW" localizedString="Chinese (traditional)"></value>
+                <value name="en" localizedString="English"></value>
+                <value name="fr" localizedString="French"></value>
+                <value name="de" localizedString="German"></value>
+                <value name="it" localizedString="Italian"></value>
+                <value name="ja" localizedString="Japanese"></value>
+                <value name="ko" localizedString="Korean"></value>
+            </allowableValues>
+        </definition>
+        <definition name="StringArray" localizedString="StringArray" class="Array" arrayElementClass="String"></definition>
+        <definition name="RegionCodes" localizedString="RegionCodes" class="String" default="en-US">
+            <allowableValues>
+                <value name="en_CA" localizedString="Canada"></value>
+                <value name="fr_CA" localizedString="Canada (French)"></value>
+                <value name="zh_CN" localizedString="China"></value>
+                <value name="fr_FR" localizedString="France"></value>
+                <value name="de_DE" localizedString="Germany"></value>
+                <value name="it_IT" localizedString="Italy"></value>
+                <value name="ja_JP" localizedString="Japan"></value>
+                <value name="ko_KR" localizedString="Korea"></value>
+                <value name="zh_TW" localizedString="Taiwan"></value>
+                <value name="en_GB" localizedString="United Kingdom"></value>
+                <value name="en_US" localizedString="United States"></value>
+            </allowableValues>
+        </definition>
+        <definition name="Architectures" localizedString="Architectures" class="Array" arrayElementClass="Architecture"></definition>
+        <definition name="Architecture" localizedString="Architecture" class="String" default="i386">
+            <allowableValues>
+                <value name="i386" localizedString="Intel (32-bit)"></value>
+                <value name="x86_64" localizedString="Intel (64-bit)"></value>
+                <value name="ppc" localizedString="PowerPC (32-bit)"></value>
+                <value name="ppc64" localizedString="PowerPC (64-bit)"></value>
+            </allowableValues>
+        </definition>
+        <definition name="StatusBarStyles" localizedString="StatusBarStyles" class="String" default="UIStatusBarStyleDefault">
+            <allowableValues>
+                <value name="UIStatusBarStyleDefault" localizedString="Gray style (default)"></value>
+                <value name="UIStatusBarStyleBlackTranslucent" localizedString="Transparent black style (alpha of 0.5)"></value>
+                <value name="UIStatusBarStyleBlackOpaque" localizedString="Opaque black style"></value>
+            </allowableValues>
+        </definition>
+        <definition name="InterfaceOrientationArray" localizedString="InterfaceOrientationArray" class="Array" arrayElementClass="InterfaceOrientations"></definition>
+        <definition name="InterfaceOrientations" localizedString="InterfaceOrientations" class="String" default="UIInterfaceOrientationPortrait">
+            <allowableValues>
+                <value name="UIInterfaceOrientationPortrait" localizedString="Portrait (bottom home button)"></value>
+                <value name="UIInterfaceOrientationPortraitUpsideDown" localizedString="Portrait (top home button)"></value>
+                <value name="UIInterfaceOrientationLandscapeLeft" localizedString="Landscape (left home button)"></value>
+                <value name="UIInterfaceOrientationLandscapeRight" localizedString="Landscape (right home button)"></value>
+            </allowableValues>
+        </definition>
+        <definition name="VersionString" localizedString="VersionString" class="String" default="10.0.0"></definition>
+        <definition name="QLThumbnailMinimumSizeDef" localizedString="QLThumbnailMinimumSizeDef" class="Number" default="17.0"></definition>
+        <definition name="QLPreviewHeightDef" localizedString="QLPreviewHeightDef" class="Number" default="800.0"></definition>
+        <definition name="QLPreviewWidthDef" localizedString="QLPreviewWidthDef" class="Number" default="600.0"></definition>
+        <definition name="QLSupportsConcurrentRequestsDef" localizedString="QLSupportsConcurrentRequestsDef" class="Boolean" default="NO"></definition>
+        <definition name="QLNeedsToBeRunInMainThreadDef" localizedString="QLNeedsToBeRunInMainThreadDef" class="Boolean" default="YES"></definition>
+        <definition name="ApplicationCategory" localizedString="ApplicationCategory" class="String" default="">
+            <allowableValues>
+                <value name="public.app-category.business" localizedString="Business"></value>
+                <value name="public.app-category.developer-tools" localizedString="Developer Tools"></value>
+                <value name="public.app-category.education" localizedString="Education"></value>
+                <value name="public.app-category.entertainment" localizedString="Entertainment"></value>
+                <value name="public.app-category.finance" localizedString="Finance"></value>
+                <value name="public.app-category.games" localizedString="Games"></value>
+                <value name="public.app-category.action-games" localizedString="Games - Action Games"></value>
+                <value name="public.app-category.adventure-games" localizedString="Games - Adventure Games"></value>
+                <value name="public.app-category.arcade-games" localizedString="Games - Arcade Games"></value>
+                <value name="public.app-category.board-games" localizedString="Games - Board Games"></value>
+                <value name="public.app-category.card-games" localizedString="Games - Card Games"></value>
+                <value name="public.app-category.casino-games" localizedString="Games - Casino Games"></value>
+                <value name="public.app-category.dice-games" localizedString="Games - Dice Games"></value>
+                <value name="public.app-category.educational-games" localizedString="Games - Educational Games"></value>
+                <value name="public.app-category.family-games" localizedString="Games - Family Games"></value>
+                <value name="public.app-category.kids-games" localizedString="Games - Kids Games"></value>
+                <value name="public.app-category.music-games" localizedString="Games - Music Games"></value>
+                <value name="public.app-category.puzzle-games" localizedString="Games - Puzzle Games"></value>
+                <value name="public.app-category.racing-games" localizedString="Games - Racing Games"></value>
+                <value name="public.app-category.role-playing-games" localizedString="Games - Role Playing Games"></value>
+                <value name="public.app-category.simulation-games" localizedString="Games - Simulation Games"></value>
+                <value name="public.app-category.sports-games" localizedString="Games - Sports Games"></value>
+                <value name="public.app-category.strategy-games" localizedString="Games - Strategy Games"></value>
+                <value name="public.app-category.trivia-games" localizedString="Games - Trivia Games"></value>
+                <value name="public.app-category.word-games" localizedString="Games - Word Games"></value>
+                <value name="public.app-category.graphics-design" localizedString="Graphics Design"></value>
+                <value name="public.app-category.healthcare-fitness" localizedString="Healthcare &amp; Fitness"></value>
+                <value name="public.app-category.lifestyle" localizedString="Lifestyle"></value>
+                <value name="public.app-category.medical" localizedString="Medical"></value>
+                <value name="public.app-category.music" localizedString="Music"></value>
+                <value name="public.app-category.news" localizedString="News"></value>
+                <value name="public.app-category.photography" localizedString="Photography"></value>
+                <value name="public.app-category.productivity" localizedString="Productivity"></value>
+                <value name="public.app-category.reference" localizedString="Reference"></value>
+                <value name="public.app-category.social-networking" localizedString="Social Networking"></value>
+                <value name="public.app-category.sports" localizedString="Sports"></value>
+                <value name="public.app-category.travel" localizedString="Travel"></value>
+                <value name="public.app-category.utilities" localizedString="Utilities"></value>
+                <value name="public.app-category.video" localizedString="Video"></value>
+                <value name="public.app-category.weather" localizedString="Weather"></value>
+            </allowableValues>
+        </definition>
+        <definition name="CFBundleIcons" localizedString="CFBundleIcons" class="Dictionary" identifyingKey="CFBundlePrimaryIcon">
+            <dictionaryKeys>
+                <key name="UINewsstandIcon" localizedString="Newsstand Icon" class="UINewsstandIcon" use="required"></key>
+                <key name="CFBundlePrimaryIcon" localizedString="Primary Icon" class="CFBundlePrimaryIcon" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="CFBundlePrimaryIcon" localizedString="CFBundlePrimaryIcon" class="Dictionary" identifyingKey="CFBundleIconFiles">
+            <dictionaryKeys>
+                <key name="UIPrerenderedIcon" localizedString="Icon already includes gloss effects" class="Boolean" use="required"></key>
+                <key name="CFBundleIconFiles" localizedString="Icon files" class="StringArray" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="UINewsstandIcon" localizedString="UINewsstandIcon" class="Dictionary" identifyingKey="CFBundleIconFiles">
+            <dictionaryKeys>
+                <key name="UINewsstandBindingEdge" localizedString="Binding edge" class="UINewsstandBindingEdge" use="required"></key>
+                <key name="UINewsstandBindingType" localizedString="Binding type" class="UINewsstandBindingType" use="required"></key>
+                <key name="CFBundleIconFiles" localizedString="Icon files" class="StringArray" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="UINewsstandBindingType" localizedString="UINewsstandBindingType" class="String" default="UINewsstandBindingTypeMagazine">
+            <allowableValues>
+                <value name="UINewsstandBindingTypeMagazine" localizedString="Magazine"></value>
+                <value name="UINewsstandBindingTypeNewspaper" localizedString="Newspaper"></value>
+            </allowableValues>
+        </definition>
+        <definition name="UINewsstandBindingEdge" localizedString="UINewsstandBindingEdge" class="String" default="UINewsstandBindingEdgeLeft">
+            <allowableValues>
+                <value name="UINewsstandBindingEdgeLeft" localizedString="Left"></value>
+                <value name="UINewsstandBindingEdgeRight" localizedString="Right"></value>
+                <value name="UINewsstandBindingEdgeBottom" localizedString="Bottom"></value>
+            </allowableValues>
+        </definition>
+        <definition name="MKDirectionsApplicationSupportedModesList" localizedString="MKDirectionsApplicationSupportedModesList" class="Array" arrayElementClass="MKDirectionsApplicationSupportedMode"></definition>
+        <definition name="MKDirectionsApplicationSupportedMode" localizedString="MKDirectionsApplicationSupportedMode" class="String" default="MKDirectionsModePlane">
+            <allowableValues>
+                <value name="MKDirectionsModePlane" localizedString="Airplane"></value>
+                <value name="MKDirectionsModeBike" localizedString="Bike"></value>
+                <value name="MKDirectionsModeBus" localizedString="Bus"></value>
+                <value name="MKDirectionsModeCar" localizedString="Car"></value>
+                <value name="MKDirectionsModeFerry" localizedString="Ferry"></value>
+                <value name="MKDirectionsModePedestrian" localizedString="Pedestrian"></value>
+                <value name="MKDirectionsModeStreetCar" localizedString="StreetCar"></value>
+                <value name="MKDirectionsModeSubway" localizedString="Subway"></value>
+                <value name="MKDirectionsModeTaxi" localizedString="Taxi"></value>
+                <value name="MKDirectionsModeTrain" localizedString="Train"></value>
+                <value name="MKDirectionsModeOther" localizedString="Other"></value>
+            </allowableValues>
+        </definition>
+        <definition name="UIStatusBarTintingDictionary" localizedString="UIStatusBarTintingDictionary" class="Dictionary">
+            <dictionaryKeys>
+                <key name="UINavigationBar" localizedString="Navigation bar" class="UINavigationBarDictionary" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="UINavigationBarDictionary" localizedString="UINavigationBarDictionary" class="Dictionary">
+            <dictionaryKeys>
+                <key name="BackgroundImage" localizedString="Background image" class="String" use="optional"></key>
+                <key name="Style" localizedString="Style" class="UIBarStyle" use="optional"></key>
+                <key name="TintColor" localizedString="TintColor" class="TintColorDictionary" use="optional"></key>
+                <key name="Translucent" localizedString="Translucent" class="Boolean" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="UIBarStyle" localizedString="UIBarStyle" class="String" default="UIBarStyleDefault">
+            <allowableValues>
+                <value name="UIBarStyleDefault" localizedString="Default"></value>
+                <value name="UIBarStyleBlack" localizedString="Black"></value>
+            </allowableValues>
+        </definition>
+        <definition name="TintColorDictionary" localizedString="TintColorDictionary" class="Dictionary">
+            <dictionaryKeys>
+                <key name="Blue" localizedString="Blue" class="Number" use="optional"></key>
+                <key name="Green" localizedString="Green" class="Number" use="optional"></key>
+                <key name="Red" localizedString="Red" class="Number" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="UserNotificationAlertStyle" localizedString="UserNotificationAlertStyle" class="String" default="banner">
+            <allowableValues>
+                <value name="banner" localizedString="banner"></value>
+                <value name="alert" localizedString="alert"></value>
+            </allowableValues>
+        </definition>
+        <definition name="NSExtension" localizedString="NSExtension" class="VariantDictionary">
+            <variants>
+                <variant name="NSExtension-Action" localizedString="" class="NSExtension-Action"></variant>
+                <variant name="NSExtension-Keyboard" localizedString="" class="NSExtensionAttributes-Keyboard"></variant>
+                <variant name="NSExtension-DocumentPicker" localizedString="" class="NSExtension-DocumentPicker"></variant>
+                <variant name="NSExtension-FileProvider" localizedString="" class="NSExtension-FileProvider"></variant>
+                <variant name="NSExtension-FinderSync" localizedString="" class="NSExtension-FinderSync"></variant>
+                <variant name="NSExtension-PhotoEditing" localizedString="" class="NSExtension-PhotoEditing"></variant>
+                <variant name="NSExtension-Share" localizedString="" class="NSExtension-Share"></variant>
+                <variant name="NSExtension-Today" localizedString="" class="NSExtension-Today"></variant>
+                <variant name="NSExtension-General" localizedString="" class="NSExtension-General"></variant>
+            </variants>
+        </definition>
+        <definition name="NSExtension-Action" localizedString="NSExtension-Action" class="Dictionary" variantKey="NSExtensionPointIdentifier" variantValue="com.apple.ui-services">
+            <dictionaryKeys>
+                <key name="NSExtensionAttributes" localizedString="NSExtensionAttributes" class="NSExtensionAttributes-Action" use="default"></key>
+                <key name="NSExtensionMainStoryboard" localizedString="NSExtensionMainStoryboard" class="String" use="optional"></key>
+                <key name="NSExtensionPointIdentifier" localizedString="NSExtensionPointIdentifier" class="NSExtensionPointIdentifier" use="required"></key>
+                <key name="NSExtensionPrincipalClass" localizedString="NSExtensionPrincipalClass" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtension-Keyboard" localizedString="NSExtension-Keyboard" class="Dictionary" variantKey="NSExtensionPointIdentifier" variantValue="com.apple.keyboard-services">
+            <dictionaryKeys>
+                <key name="NSExtensionAttributes" localizedString="NSExtensionAttributes" class="NSExtensionAttributes-Action" use="default"></key>
+                <key name="NSExtensionMainStoryboard" localizedString="NSExtensionMainStoryboard" class="String" use="optional"></key>
+                <key name="NSExtensionPointIdentifier" localizedString="NSExtensionPointIdentifier" class="NSExtensionPointIdentifier" use="required"></key>
+                <key name="NSExtensionPrincipalClass" localizedString="NSExtensionPrincipalClass" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtension-DocumentPicker" localizedString="NSExtension-DocumentPicker" class="Dictionary" variantKey="NSExtensionPointIdentifier" variantValue="com.apple.fileprovider-ui">
+            <dictionaryKeys>
+                <key name="NSExtensionAttributes" localizedString="NSExtensionAttributes" class="NSExtensionAttributes-FileProvider" use="default"></key>
+                <key name="NSExtensionMainStoryboard" localizedString="NSExtensionMainStoryboard" class="String" use="optional"></key>
+                <key name="NSExtensionPointIdentifier" localizedString="NSExtensionPointIdentifier" class="NSExtensionPointIdentifier" use="required"></key>
+                <key name="NSExtensionPrincipalClass" localizedString="NSExtensionPrincipalClass" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtension-FileProvider" localizedString="NSExtension-FileProvider" class="Dictionary" variantKey="NSExtensionPointIdentifier" variantValue="com.apple.fileprovider-nonui">
+            <dictionaryKeys>
+                <key name="NSExtensionAttributes" localizedString="NSExtensionAttributes" class="NSExtensionAttributes-FileProvider" use="default"></key>
+                <key name="NSExtensionMainStoryboard" localizedString="NSExtensionMainStoryboard" class="String" use="optional"></key>
+                <key name="NSExtensionPointIdentifier" localizedString="NSExtensionPointIdentifier" class="NSExtensionPointIdentifier" use="required"></key>
+                <key name="NSExtensionPrincipalClass" localizedString="NSExtensionPrincipalClass" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtension-FinderSync" localizedString="NSExtension-FinderSync" class="Dictionary" variantKey="NSExtensionPointIdentifier" variantValue="com.apple.FinderSync">
+            <dictionaryKeys>
+                <key name="NSExtensionAttributes" localizedString="NSExtensionAttributes" class="NSExtensionAttributes-FinderSync" use="default"></key>
+                <key name="NSExtensionMainStoryboard" localizedString="NSExtensionMainStoryboard" class="String" use="optional"></key>
+                <key name="NSExtensionPointIdentifier" localizedString="NSExtensionPointIdentifier" class="NSExtensionPointIdentifier" use="required"></key>
+                <key name="NSExtensionPrincipalClass" localizedString="NSExtensionPrincipalClass" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtension-PhotoEditing" localizedString="NSExtension-PhotoEditing" class="Dictionary" variantKey="NSExtensionPointIdentifier" variantValue="com.apple.photo-editing">
+            <dictionaryKeys>
+                <key name="NSExtensionAttributes" localizedString="NSExtensionAttributes" class="NSExtensionAttributes-PhotoEditing" use="default"></key>
+                <key name="NSExtensionMainStoryboard" localizedString="NSExtensionMainStoryboard" class="String" use="optional"></key>
+                <key name="NSExtensionPointIdentifier" localizedString="NSExtensionPointIdentifier" class="NSExtensionPointIdentifier" use="required"></key>
+                <key name="NSExtensionPrincipalClass" localizedString="NSExtensionPrincipalClass" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtension-Share" localizedString="NSExtension-Share" class="Dictionary" variantKey="NSExtensionPointIdentifier" variantValue="com.apple.share-services">
+            <dictionaryKeys>
+                <key name="NSExtensionAttributes" localizedString="NSExtensionAttributes" class="NSExtensionAttributes-Share" use="default"></key>
+                <key name="NSExtensionMainStoryboard" localizedString="NSExtensionMainStoryboard" class="String" use="optional"></key>
+                <key name="NSExtensionPointIdentifier" localizedString="NSExtensionPointIdentifier" class="NSExtensionPointIdentifier" use="required"></key>
+                <key name="NSExtensionPrincipalClass" localizedString="NSExtensionPrincipalClass" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtension-Today" localizedString="NSExtension-Today" class="Dictionary" variantKey="NSExtensionPointIdentifier" variantValue="com.apple.widget-extension">
+            <dictionaryKeys>
+                <key name="NSExtensionAttributes" localizedString="NSExtensionAttributes" class="Dictionary" use="default"></key>
+                <key name="NSExtensionMainStoryboard" localizedString="NSExtensionMainStoryboard" class="String" use="optional"></key>
+                <key name="NSExtensionPointIdentifier" localizedString="NSExtensionPointIdentifier" class="NSExtensionPointIdentifier" use="required"></key>
+                <key name="NSExtensionPrincipalClass" localizedString="NSExtensionPrincipalClass" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtension-General" localizedString="NSExtension-General" class="Dictionary" variantKey="NSExtensionPointIdentifier">
+            <dictionaryKeys>
+                <key name="NSExtensionAttributes" localizedString="NSExtensionAttributes" class="Dictionary" use="default"></key>
+                <key name="NSExtensionMainStoryboard" localizedString="NSExtensionMainStoryboard" class="String" use="optional"></key>
+                <key name="NSExtensionPointIdentifier" localizedString="NSExtensionPointIdentifier" class="NSExtensionPointIdentifier" use="required"></key>
+                <key name="NSExtensionPrincipalClass" localizedString="NSExtensionPrincipalClass" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtensionPointIdentifier" localizedString="NSExtensionPointIdentifier" class="String" default="com.apple.ui-services">
+            <allowableValues>
+                <value name="com.apple.ui-services" localizedString="Action"></value>
+                <value name="com.apple.keyboard-service" localizedString="Custom Keybord"></value>
+                <value name="com.apple.fileprovider-ui" localizedString="Document Picker"></value>
+                <value name="com.apple.fileprovider-nonui" localizedString="File Provider"></value>
+                <value name="com.apple.FinderSync" localizedString="Finder Sync"></value>
+                <value name="com.apple.photo-editing" localizedString="Photo Editing"></value>
+                <value name="com.apple.share-services" localizedString="Share"></value>
+                <value name="com.apple.widget-extension" localizedString="Today"></value>
+            </allowableValues>
+        </definition>
+        <definition name="NSExtensionAttributes" localizedString="NSExtensionAttributes" class="VariantDictionary">
+            <variants>
+                <variant name="General" localizedString="" class="NSExtensionAttributesGeneral"></variant>
+            </variants>
+        </definition>
+        <definition name="NSExtensionAttributes-Action" localizedString="NSExtensionAttributes-Action" class="Dictionary">
+            <dictionaryKeys>
+                <key name="NSExtensionActivationRule" localizedString="NSExtensionActivationRule" class="NSExtensionActivationRule" use="required"></key>
+                <key name="NSExtensionJavaScriptPreprocessingFile" localizedString="NSExtensionJavaScriptPreprocessingFile" class="String" use="optional"></key>
+                <key name="NSExtensionServiceAllowsToolbarItem" localizedString="NSExtensionServiceAllowsToolbarItem" class="Boolean" use="optional"></key>
+                <key name="NSExtensionServiceRoleType" localizedString="NSExtensionServiceRoleType" class="NSExtensionServiceRoleType" use="required"></key>
+                <key name="NSExtensionServiceTolobarIconFile" localizedString="NSExtensionServiceTolobarIconFile" class="String" use="optional"></key>
+                <key name="NSExtensionServiceToolbarPaletteLabel" localizedString="NSExtensionServiceToolbarPaletteLabel" class="String" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtensionAttributes-Keyboard" localizedString="NSExtensionAttributes-Keyboard" class="Dictionary">
+            <dictionaryKeys>
+                <key name="IsASCIICapable" localizedString="IsASCIICapable" class="Boolean" use="default"></key>
+                <key name="PrefersRightToLeft" localizedString="PrefersRightToLeft" class="Boolean" use="default"></key>
+                <key name="PrimaryLanguage" localizedString="PrimaryLanguage" class="String" use="default"></key>
+                <key name="RequestsOpenAccess" localizedString="RequestsOpenAccess" class="Boolean" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtensionAttributes-FileProvider" localizedString="NSExtensionAttributes-FileProvider" class="Dictionary">
+            <dictionaryKeys>
+                <key name="NSExtensionFileProviderDocumentGroup" localizedString="NSExtensionFileProviderDocumentGroup" class="String" use="default"></key>
+                <key name="UIDocumentPickerModes" localizedString="UIDocumentPickerModes" class="UIDocumentPickerModeArray" use="required"></key>
+                <key name="UIDocumentPickerSupportedFileTypes" localizedString="UIDocumentPickerSupportedFileTypes" class="StringArray" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtensionAttributes-PhotoEditing" localizedString="NSExtensionAttributes-PhotoEditing" class="Dictionary">
+            <dictionaryKeys>
+                <key name="PHSupportedMediaTypes" localizedString="PHSupportedMediaTypes" class="PHMediaTypeArray" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtensionAttributes-Share" localizedString="NSExtensionAttributes-Share" class="Dictionary">
+            <dictionaryKeys>
+                <key name="NSExtensionActivationRule" localizedString="NSExtensionActivationRule" class="NSExtensionActivationRule" use="default"></key>
+                <key name="NSExtensionJavaScriptPreprocessingFile" localizedString="NSExtensionJavaScriptPreprocessingFile" class="String" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtensionActivationRule" localizedString="NSExtensionActivationRule" class="Dictionary">
+            <dictionaryKeys>
+                <key name="NSExtensionActivationSupportsAttachmentsWithMaxCount" localizedString="NSExtensionActivationSupportsAttachmentsWithMaxCount" class="Number" use="optional"></key>
+                <key name="NSExtensionActivationSupportsAttachmentsWithMinCount" localizedString="NSExtensionActivationSupportsAttachmentsWithMinCount" class="Number" use="optional"></key>
+                <key name="NSExtensionActivationSupportsFileWithMaxCount" localizedString="NSExtensionActivationSupportsFileWithMaxCount" class="Number" use="optional"></key>
+                <key name="NSExtensionActivationSupportsImageWithMaxCount" localizedString="NSExtensionActivationSupportsImageWithMaxCount" class="Number" use="optional"></key>
+                <key name="NSExtensionActivationSupportsMovieWithMaxCount" localizedString="NSExtensionActivationSupportsMovieWithMaxCount" class="Number" use="optional"></key>
+                <key name="NSExtensionActivationSupportsText" localizedString="NSExtensionActivationSupportsText" class="Boolean" use="optional"></key>
+                <key name="NSExtensionActivationSupportsWebPageWithMaxCount" localizedString="NSExtensionActivationSupportsWebPageWithMaxCount" class="Number" use="optional"></key>
+                <key name="NSExtensionActivationSupportsWebURLWithMaxCount" localizedString="NSExtensionActivationSupportsWebURLWithMaxCount" class="Number" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NSExtensionServiceRoleType" localizedString="NSExtensionServiceRoleType" class="String" default="NSExtensionServiceRoleTypeEditor">
+            <allowableValues>
+                <value name="NSExtensionServiceRoleTypeEditor" localizedString="Editor"></value>
+                <value name="NSExtensionServiceRoleTypeViewer" localizedString="Viewer"></value>
+            </allowableValues>
+        </definition>
+        <definition name="UIDocumentPickerMode" localizedString="UIDocumentPickerMode" class="String" default="UIDocumentPickerModeImport">
+            <allowableValues>
+                <value name="UIDocumentPickerModeImport" localizedString="Import"></value>
+                <value name="UIDocumentPickerModeOpen" localizedString="Open"></value>
+                <value name="UIDocumentPickerModeExportToService" localizedString="Export"></value>
+                <value name="UIDocumentPickerModeMovieToService" localizedString="Movie"></value>
+            </allowableValues>
+        </definition>
+        <definition name="UIDocumentPickerModeArray" localizedString="UIDocumentPickerModeArray" class="Array" arrayElementClass="UIDocumentPickerMode"></definition>
+        <definition name="PHMediaType" localizedString="PHMediaType" class="String" default="Image">
+            <allowableValues>
+                <value name="Image" localizedString="Image"></value>
+                <value name="Video" localizedString="Video"></value>
+            </allowableValues>
+        </definition>
+        <definition name="PHMediaTypeArray" localizedString="PHMediaTypeArray" class="Array" arrayElementClass="PHMediaType"></definition>
+    </extension>
+</plugin>

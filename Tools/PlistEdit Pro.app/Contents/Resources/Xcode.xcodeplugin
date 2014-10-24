@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin name="Xcode preferences" id="com.fatcatsoftware.structure-definition.xcode" version="1.0" xmlns:plisteditpro="http://www.fatcatsoftware.com/plisteditpro">
+    <extension point="com.apple.xcode.plist.structure-definition" name="Xcode preferences" id="com.fatcatsoftware.xcode-preferences">
+        <definition name="_root_" localizedString="Xcode preferences" class="Dictionary">
+            <dictionaryKeys>
+                <key name="XCCodeSenseAllowAutoCompletionInPlainFiles" localizedString="Allow Code Sense completion in plain text files" class="Boolean" use="optional"></key>
+                <key name="XCAutoClearRunDebugStdIOLogs" localizedString="Auto-clear console logs" class="Boolean" use="optional"></key>
+                <key name="PBXBeepOnNoMatchingBrace" localizedString="Beep on no matching brace" class="Boolean" use="optional"></key>
+                <key name="PBXBuildFailureSound" localizedString="Build failure sound file path" class="String" use="optional"></key>
+                <key name="PBXBuildSuccessSound" localizedString="Build success sound file path" class="String" use="optional"></key>
+                <key name="BuildSystemCacheMinimumRemovalAgeInHours" localizedString="Build system cache removal age (hours)" class="Number" use="optional"></key>
+                <key name="BuildSystemCacheSizeInMegabytes" localizedString="Build system cache size in MB" class="Number" use="optional"></key>
+                <key name="XCCodeSenseFormattingOptions" localizedString="Code Sense formatting options" class="CodeSenseFormattingOptions" use="optional"></key>
+                <key name="XCCodeSenseIndexBasePath" localizedString="Code Sense index base path" class="String" use="optional"></key>
+                <key name="PBXCustomTemplateMacroDefinitions" localizedString="Custom template macro definitions" class="CustomTemplateMacroDefinitions" use="optional"></key>
+                <key name="DistributedBuildsLogLevel" localizedString="Distributed build log level" class="DistributedBuildsLogLevel" use="optional"></key>
+                <key name="XCMaxNumberOfDistributedTasks" localizedString="Distributed build max num tasks" class="Number" use="optional"></key>
+                <key name="XCDistributedBuildsVerboseLogging" localizedString="Distributed build verbose logging" class="String" use="optional"></key>
+                <key name="PBXDontWarnIfProjectSaveFails" localizedString="Don't warn if project save fails" class="Boolean" use="optional"></key>
+                <key name="PBXEmacsPath" localizedString="Emacs binary path" class="String" use="optional"></key>
+                <key name="XCSmartInsertDeleteEnabled" localizedString="Enable smart insert/delete" class="Boolean" use="optional"></key>
+                <key name="PBExtraPlugInFolders" localizedString="Extra plugin folders" class="StringArray" use="optional"></key>
+                <key name="PBXGDBDebuggerLogFileName" localizedString="GDB log file path" class="String" use="optional"></key>
+                <key name="PBXGDBDebuggerLogToFile" localizedString="GDB logging enabled" class="Boolean" use="optional"></key>
+                <key name="PBXGDBPath" localizedString="GDB path" class="String" use="optional"></key>
+                <key name="PBXIndentOnPaste" localizedString="Indent on paste" class="Boolean" use="optional"></key>
+                <key name="XCMatchIndentWithLineAbove" localizedString="Match indent with line above" class="Boolean" use="optional"></key>
+                <key name="PBXNumberOfParallelBuildSubtasks" localizedString="Number of parallel build tasks" class="Number" use="optional"></key>
+                <key name="XCOpenProjectFilesInsideFolders" localizedString="Open project files inside folders" class="Boolean" use="optional"></key>
+                <key name="PBXPerforceToolPath" localizedString="Perforce binary path" class="String" use="optional"></key>
+                <key name="PBXPipeShellPath" localizedString="Pipe shell path" class="String" use="optional"></key>
+                <key name="PBXMethodPopupIncludeClassDeclarationsDefault" localizedString="Popup includes class declarations" class="Boolean" use="optional"></key>
+                <key name="PBXMethodPopupIncludeClassDefinitionsDefault" localizedString="Popup includes class definitions" class="Boolean" use="optional"></key>
+                <key name="PBXMethodPopupIncludeDefinesDefault" localizedString="Popup includes defines" class="Boolean" use="optional"></key>
+                <key name="PBXMethodPopupIncludeFunctionDeclarationsDefault" localizedString="Popup includes function declarations" class="Boolean" use="optional"></key>
+                <key name="PBXMethodPopupIncludeFunctionDefinitionsDefault" localizedString="Popup includes function definitions" class="Boolean" use="optional"></key>
+                <key name="PBXMethodPopupIncludeMarksDefault" localizedString="Popup includes marks" class="Boolean" use="optional"></key>
+                <key name="PBXMethodPopupIncludeMethodDeclarationsDefault" localizedString="Popup includes method declarations" class="Boolean" use="optional"></key>
+                <key name="PBXMethodPopupIncludeMethodDefinitionsDefault" localizedString="Popup includes method definitions" class="Boolean" use="optional"></key>
+                <key name="PBXMethodPopupIncludeTypesDefault" localizedString="Popup includes types" class="Boolean" use="optional"></key>
+                <key name="PBXMethodPopupIncludeWarningsDefault" localizedString="Popup includes warnings" class="Boolean" use="optional"></key>
+                <key name="PredictiveCompilationDelay" localizedString="Predictive compilation delay" class="Number" use="optional"></key>
+                <key name="PBXPreservePosixPermissionsOnSave" localizedString="Preserve permissions when saving" class="Boolean" use="optional"></key>
+                <key name="NSRecentDocumentLimit" localizedString="Recent projects menu limit" class="Number" use="optional"></key>
+                <key name="XCSCMLogSize" localizedString="SCM maximum log size (KB)" class="Number" use="optional"></key>
+                <key name="XCScrollToEndOfMatchingBrace" localizedString="Scroll to end of matching brace" class="Boolean" use="optional"></key>
+                <key name="XCSelectToInsideMatchingQuotes" localizedString="Select to inside matching quotes" class="Boolean" use="optional"></key>
+                <key name="XCShowControlCharacters" localizedString="Show control characters" class="Boolean" use="optional"></key>
+                <key name="PBXShowMatchingBrace" localizedString="Show matching brace" class="Boolean" use="optional"></key>
+                <key name="XCShowNonBreakingSpace" localizedString="Show non-breaking spaces" class="Boolean" use="optional"></key>
+                <key name="XCShowUndoPastSaveWarning" localizedString="Show warning when undoing past save" class="Boolean" use="optional"></key>
+                <key name="XCSnapshotDiskImagePath" localizedString="Snapshot disk image path" class="String" use="optional"></key>
+                <key name="XCColorUnknownLanguages" localizedString="Syntax color unknown languages" class="Boolean" use="optional"></key>
+                <key name="NSDragAndDropTextDelay" localizedString="Text drag and drop delay" class="Number" use="optional"></key>
+                <key name="Encodings" localizedString="Text encodings" class="EncodingsArray" use="optional"></key>
+                <key name="UsePerConfigurationBuildLocations" localizedString="Use per-configuration build locations" class="Boolean" use="optional"></key>
+                <key name="PBXXEmacsPath" localizedString="Xemacs binary path" class="String" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="StringArray" localizedString="StringArray" class="Array" arrayElementClass="String"></definition>
+        <definition name="CustomTemplateMacroDefinitions" localizedString="CustomTemplateMacroDefinitions" class="Dictionary">
+            <dictionaryKeys>
+                <key name="ORGANIZATIONNAME" localizedString="ORGANIZATIONNAME" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="EncodingsArray" localizedString="EncodingsArray" class="Array" arrayElementClass="Number"></definition>
+        <definition name="CodeSenseFormattingOptions" localizedString="CodeSenseFormattingOptions" class="Dictionary">
+            <dictionaryKeys>
+                <key name="BlockSeparator" localizedString="BlockSeparator" class="StringDefaultSpace" use="default"></key>
+                <key name="CaseStatementSpacing" localizedString="CaseStatementSpacing" class="StringDefaultTab" use="default"></key>
+                <key name="FunctionBlockSeparator" localizedString="FunctionBlockSeparator" class="StringDefaultNewline" use="default"></key>
+                <key name="InExpressionsSpacing" localizedString="InExpressionsSpacing" class="String" use="default"></key>
+                <key name="InFunctionArgsSpacing" localizedString="InFunctionArgsSpacing" class="String" use="default"></key>
+                <key name="InMessageSpacing" localizedString="InMessageSpacing" class="String" use="default"></key>
+                <key name="MessageArgSpacing" localizedString="MessageArgSpacing" class="String" use="default"></key>
+                <key name="PostBlockSeparator" localizedString="PostBlockSeparator" class="StringDefaultNewline" use="default"></key>
+                <key name="PostColonSpacing" localizedString="PostColonSpacing" class="String" use="default"></key>
+                <key name="PostCommaSpacing" localizedString="PostCommaSpacing" class="StringDefaultSpace" use="default"></key>
+                <key name="PreColonSpacing" localizedString="PreColonSpacing" class="String" use="default"></key>
+                <key name="PreCommaSpacing" localizedString="PreCommaSpacing" class="String" use="default"></key>
+                <key name="PreExpressionsSpacing" localizedString="PreExpressionsSpacing" class="StringDefaultSpace" use="default"></key>
+                <key name="PreFunctionArgsSpacing" localizedString="PreFunctionArgsSpacing" class="String" use="default"></key>
+                <key name="PreMethodDeclSpacing" localizedString="PreMethodDeclSpacing" class="StringDefaultSpace" use="default"></key>
+                <key name="PreMethodTypeSpacing" localizedString="PreMethodTypeSpacing" class="StringDefaultSpace" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="StringDefaultSpace" localizedString="StringDefaultSpace" class="String" default=" "></definition>
+        <definition name="StringDefaultTab" localizedString="StringDefaultTab" class="String" default="\t"></definition>
+        <definition name="StringDefaultNewline" localizedString="StringDefaultNewline" class="String" default="\n"></definition>
+        <definition name="DistributedBuildsLogLevel" localizedString="DistributedBuildsLogLevel" class="Number" default="0">
+            <allowableValues>
+                <value name="0" localizedString="No logging"></value>
+                <value name="1" localizedString="Partial logging"></value>
+                <value name="2" localizedString="Full logging"></value>
+            </allowableValues>
+        </definition>
+    </extension>
+    <extension point="com.apple.xcode.plist.structure-definition" name="Xcode Macro" id="com.fatcatsoftware.xcode-macro">
+        <definition name="_root_" localizedString="Xcode Macro" class="Array" arrayElementClass="MacroDictionary">
+            <arrayEntries>
+                <entry class="MacroDictionary"></entry>
+                <entry class="MacroDictionary"></entry>
+            </arrayEntries>
+        </definition>
+        <definition name="LanguageArray" class="Array" arrayElementClass="String"></definition>
+        <definition name="MacroDictionary" class="Dictionary">
+            <dictionaryKeys>
+                <key name="BasedOn" localizedString="BasedOn" class="String" use="default"></key>
+                <key name="CompletionPrefix" localizedString="CompletionPrefix" class="String" use="default"></key>
+                <key name="ComputerLanguages" localizedString="ComputerLanguages" class="LanguageArray" use="optional"></key>
+                <key name="DefaultSettings" localizedString="DefaultSettings" class="SettingsDictionary" use="optional"></key>
+                <key name="Identifier" localizedString="Identifier" class="String" use="default"></key>
+                <key name="IsMenu" localizedString="IsMenu" class="StringYesNo" use="optional"></key>
+                <key name="IsMenuItem" localizedString="IsMenuItem" class="StringYesNo" use="default"></key>
+                <key name="Name" localizedString="Name" class="String" use="default"></key>
+                <key name="TextString" localizedString="TextString" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="SettingsDictionary" class="Dictionary">
+            <dictionaryKeys>
+                <key name="BlockSeparator" localizedString="BlockSeparator" class="String" use="default"></key>
+                <key name="InExpressionsSpacing" localizedString="InExpressionsSpacing" class="String" use="default"></key>
+                <key name="PostBlockSeparator" localizedString="PostBlockSeparator" class="String" use="default"></key>
+                <key name="PreExpressionsSpacing" localizedString="PreExpressionsSpacing" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="StringYesNo" class="String" default="NO">
+            <allowableValues>
+                <value name="YES" localizedString="YES"></value>
+                <value name="NO" localizedString="NO"></value>
+            </allowableValues>
+        </definition>
+    </extension>
+</plugin>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link media="all" rel="stylesheet" href="task_style.css"/>
+<title>Preferences</title>
+
+</head>
+<body>
+<div id="banner">
+	<div id="machelp">
+	<a class="bread" href="table%20of%20contents.html">Table of Contents</a>
+	</div>
+	<div id="index">
+	<a class="leftborder" href="_page_index.html">index</a>
+	</div>
+</div>
+<div id="mainbox">
+	<div id="caticon">
+	<img width="32" height="32" alt="PlistEdit Pro Icon" src="PlistEditPro.png"/>
+	</div>
+</div>
+
+
+
+<div id="pagetitle">
+	<h1>Preferences</h1><br/>
+</div>
+
+<style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 16.0px; font: 12.0px 'Lucida Grande'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Lucida Grande'}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Lucida Grande'; min-height: 15.0px}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 16.0px; font: 12.0px 'Lucida Grande'; min-height: 15.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 12.0px 'Lucida Grande'; min-height: 15.0px}
+    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 12.0px 'Lucida Grande'}
+    span.s1 {text-decoration: underline}
+    ul.ul1 {list-style-type: disc}
+  </style>
+
+<p class="p1">PlistEdit Pro provides several ways to customize the program to the way you work. You can access these preferences by selecting the Preferences menu item in the PlistEdit Pro menu, or by pressing command-comma.</p>
+<p class="p2"><b>General tab</b></p>
+<p class="p3"><br/></p>
+<ul class="ul1">
+  <li class="li4"><b>Default class for new objects</b>: Selects what type of object you would like to create when adding a new child or sibling to your property list.</li>
+  <li class="li4"><b>Default property list format</b>: Selects what format (XML, ASCII, binary, or JSON) you want newly created property lists to be stored in.</li>
+  <li class="li4"><b>Ask to revert when file changes on disk</b>: When this option is enabled, PlistEdit Pro will watch the files you have open to see if they have changed on disk since you last opened them. When you bring PlistEdit Pro to the front, it will automatically ask you if you want to revert to the version on disk for any files that have changed.</li>
+  <li class="li4"><b>Enable autocompletion</b>: Enables the autocompletion feature of PlistEdit Pro, which provides completion suggestions based on existing plist content and property list definitions.</li>
+  <li class="li4"><b>Automatically check for updates</b>: Checking this box will make PlistEdit Pro check on the internet for new versions at regular intervals. Checking the "Check at startup" You can also check for updates manually using the "Check For Updates" menu item.</li>
+  <li class="li4"><b>Remember formatter type by key</b>: When enabled, if you use the "View As" menu to view an item under a particular key of a dictionary as a different type, PlistEdit Pro will remember the type you chose for that key and automatically display any items under that key as that same type. For example, if you choose to view a data object under the key "_NSAlias" as an alias record, PlistEdit Pro will then display all data objects it finds under the "_NSAlias" key as alias records without you having to change each one manually.</li>
+  <li class="li4"><b>Enable autosaving</b>: Enables in-place <a href="http://support.apple.com/kb/HT4753">autosave and Versions</a> for plist documents. If you don’t want PlistEdit Pro to save changes you’ve made unless you explicitly use the Save menu item, you can disable autosaving. Note that autosave is not compatible with PlistEdit Pro’s ability to edit files that require admin privileges, so having autosave enabled will mean you will not be able to authenticate in order to save root owned files.</li>
+  <li class="li4"><b>Install Command Line Tool</b>: Installs <a href="the%20pledit%20command%20line%20tool.html"><span class="s1">the pledit command line tool</span></a></li>
+</ul>
+<p class="p5"><br/></p>
+<p class="p2"><b>Display tab</b></p>
+<p class="p3"><b></b><br/></p>
+<ul class="ul1">
+  <li class="li4"><b>Outline font</b>: Selects the font that the outline view uses to display property list content. Click the Choose... button to select a different font from the font panel.</li>
+  <li class="li4"><b>Text font</b>: Selects the font that the text view uses to display property list content. Click the Choose... button to select a different font from the font panel.</li>
+  <li class="li4"><b>Browser font</b>: Selects the font that property list browser use to display their file lists. Click the Choose... button to select a different font from the font panel.</li>
+  <li class="li4"><b>Color XML tags</b>: Allows you to choose a color with which to color the tags in the raw text of an XML formatted property list</li>
+  <li class="li4"><b>Sort options</b>: Allows you to customize how sorting is done in PlistEdit Pro. Case sensitive sorting will cause all uppercase characters to be sorted before all lowercase characters, and enabling numeric sorting will cause any numeric values to be treated and sorted as numbers, rather than as alphabetic characters.</li>
+  <li class="li4"><b>JSON text formatting</b>: Allows you to specify whether you would like PlistEdit Pro to generated condensed JSON text (i.e. with all whitespace stripped out), or indented (i.e. with whitespace and indentation included). There are two separate settings for the formatting used in the plist document window versus the formatting used when actually saving the file. For example, this lets you view the text in PlistEdit Pro as indented, to make it easier to read, but save as condensed, to have a smaller file size.</li>
+</ul>
+<p class="p6"><b></b><br/></p>
+<p class="p2"><b>Definitions tab</b></p>
+<p class="p1">This tab displays all the structure definitions that are installed on your system. Refer to "<a href="managing%20installed%20structure%20definitions.html"><span class="s1">Managing installed structure definitions</span></a>" for more details on this tab.</p>
+<p class="p2"><b>Browsing tab</b></p>
+<p class="p1">This tab contains settings that affect <a href="property%20list%20browsers.html"><span class="s1">property list browsers</span></a>. When creating a new browser from a folder, or adding new items to an existing browser window, you can tell PlistEdit Pro what file extensions to scan the newly added folder for. Only files that match an extension in the list will be added. PlistEdit Pro can also read the 'plst' resource from the resource fork of a file (used by non-bundled Carbon applications). Checking the "Scan resource forks" checkbox will add any file that has a resource fork with a 'plst' resource whose ID is 0. Be aware that enabling this option can cause the scanning process to take significantly longer.</p>
+
+
+<div style="height: 30px;">
+
+</div>
+
+</body>
+</html>
+

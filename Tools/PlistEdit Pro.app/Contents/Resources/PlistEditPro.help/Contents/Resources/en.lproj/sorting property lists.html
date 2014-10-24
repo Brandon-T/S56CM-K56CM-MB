@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link media="all" rel="stylesheet" href="task_style.css"/>
+<title>Sorting property lists</title>
+
+</head>
+<body>
+<div id="banner">
+	<div id="machelp">
+	<a class="bread" href="table%20of%20contents.html">Table of Contents</a>
+	</div>
+	<div id="index">
+	<a class="leftborder" href="_page_index.html">index</a>
+	</div>
+</div>
+<div id="mainbox">
+	<div id="caticon">
+	<img width="32" height="32" alt="PlistEdit Pro Icon" src="PlistEditPro.png"/>
+	</div>
+</div>
+
+
+
+<div id="pagetitle">
+	<h1>Sorting property lists</h1><br/>
+</div>
+
+<style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Lucida Grande'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Lucida Grande'; min-height: 15.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; min-height: 14.0px}
+    span.s1 {text-decoration: underline}
+  </style>
+
+<p class="p1">PlistEdit Pro provide a number of different ways to sort your property lists, making it easier to browse through larger lists and find various items. Note that sorting a dictionary will not be persisted when saving the property list, since <a href="dictionaries.html"><span class="s1">dictionaries</span></a> are always saved with their keys sorted alphabetically. The order of sorted <a href="arrays.html"><span class="s1">arrays</span></a> will be saved though.</p>
+<p class="p2"><br/></p>
+<p class="p1"><b>Sort Keys</b></p>
+<p class="p2"><br/></p>
+<p class="p1">Selecting a dictionary and selecting the "Sort Keys" command from the Operations menu will rearrange the objects in the dictionary in order by their keys. <a href="dictionaries.html"><span class="s1">Dictionaries</span></a> are sorted alphabetically by default when opening a property list, but this order can be changed when renaming items or creating new items, so this allows you to restore the sort order.<span class="Apple-converted-space"> </span>Additionally, the "Sort All Keys" menu command will apply the same sorting to all <a href="dictionaries.html"><span class="s1">dictionaries</span></a> in the entire property list.</p>
+<p class="p2"><br/></p>
+<p class="p1"><b>Sort Values</b></p>
+<p class="p2"><br/></p>
+<p class="p1">Similarly, the "Sort Values" command will sort items in either an array or dictionary by the "Value" column, rather than the "Key" column. If the array/dictionary contains objects of mixed types (e.g. some strings, some numbers, some dates, etc.) the items will be grouped by type, and then sorted within each type.<span class="Apple-converted-space"></span></p>
+<p class="p2"><br/></p>
+<p class="p1"><b>Sort By Subkey</b></p>
+<p class="p2"><br/></p>
+<p class="p1">The "Sort By Subkey" command can be used on an array or dictionary containing only <a href="dictionaries.html"><span class="s1">dictionaries</span></a>, and will sort those <a href="dictionaries.html"><span class="s1">dictionaries</span></a> based on a particular key that those <a href="dictionaries.html"><span class="s1">dictionaries</span></a> contain.<span class="Apple-converted-space"> </span>For example, if you are editing an Info.plist file for a document based application and select the array of document types supported by the application, you can sort that list by any of the keys that appear in the document type <a href="dictionaries.html"><span class="s1">dictionaries</span></a>, e.g. "CFBundleTypeName", "NSDocumentClass", etc.<span class="Apple-converted-space"> </span>PlistEdit Pro will reorder the <a href="dictionaries.html"><span class="s1">dictionaries</span></a> sorted based on the key you select. Any <a href="dictionaries.html"><span class="s1">dictionaries</span></a> that don't contain a value for that key will be sorted to the end of the list. This can be combined with the "View By Subkey" command to easily browse through large lists of <a href="dictionaries.html"><span class="s1">dictionaries</span></a> based on any key contained by those <a href="dictionaries.html"><span class="s1">dictionaries</span></a>.</p>
+<p class="p2"><br/></p>
+<p class="p3"><img src="sorting%20property%20lists.sort_by_subkey.png" width="862" height="830" alt="sort_by_subkey.png"/></p>
+<p class="p4"><br/></p>
+<p class="p1"><b>Sorting Options</b></p>
+<p class="p2"><b></b><br/></p>
+<p class="p1">The <a href="preferences.html"><span class="s1">preferences</span></a> window allows you to specify whether you want your sorting to be performed case sensitively or numerically. Case sensitive sorting will sort all capital letters before lowercase letters, and numeric sorting will sort numbers based on their numeric value, rather than treating them as alphabetic strings.</p>
+
+
+<div style="height: 30px;">
+
+</div>
+
+</body>
+</html>
+

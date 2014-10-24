@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin name="AppleScript Plist Editor Plugin" id="" version="1.0" xmlns:plisteditpro="http://www.fatcatsoftware.com/plisteditpro">
+    <extension point="com.apple.xcode.plist.structure-definition" name="AppleScript Suite" id="com.apple.xcode.plist.structure-definition.script-suite">
+        <definition name="_root_" localizedString="AppleScript Suite Definition" class="Dictionary">
+            <dictionaryKeys>
+                <key name="AppleEventCode" localizedString="AppleEvent Code" class="AppleEventCodeClass" use="required"></key>
+                <key name="Classes" localizedString="Classes" class="ClassListDictionary" use="default"></key>
+                <key name="Commands" localizedString="Commands" class="CommandListDictionary" use="default"></key>
+                <key name="Enumerations" localizedString="Enumerations" class="EnumerationListDictionary" use="optional"></key>
+                <key name="Name" localizedString="Name" class="NameString" use="required"></key>
+                <key name="Synonyms" localizedString="Synonyms" class="SynonymListDictionary" use="optional"></key>
+                <key name="UsedFeatures" localizedString="UsedFeatures" class="StringArray" use="optional"></key>
+                <key name="ValueTypes" localizedString="ValueTypes" class="AppleEventCodeDictionary" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NameString" localizedString="NameString" class="String" default=""></definition>
+        <definition name="ClassListDictionary" localizedString="ClassListDictionary" class="Dictionary" defaultDictionaryValueClass="ClassDictionary" defaultKeyName="New Class"></definition>
+        <definition name="ClassDictionary" localizedString="ClassDictionary" class="Dictionary" defaultKeyName="New Class Key">
+            <dictionaryKeys>
+                <key name="AppleEventCode" localizedString="AppleEvent Code" class="AppleEventCodeClass" use="required"></key>
+                <key name="Attributes" localizedString="Attributes" class="PropertyListDictionary" use="default"></key>
+                <key name="InverseRelationships" localizedString="Inverse Relationships" class="Dictionary" use="default"></key>
+                <key name="Superclass" localizedString="Superclass" class="SuperclassString" use="required"></key>
+                <key name="SupportedCommands" localizedString="Supported Commands" class="SupportedCommandDictionary" use="default"></key>
+                <key name="ToManyRelationships" localizedString="To-many Relationships" class="PropertyListDictionary" use="default"></key>
+                <key name="ToOneRelationships" localizedString="To-one Relationships" class="PropertyListDictionary" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="SuperclassString" localizedString="SuperclassString" class="String" default=""></definition>
+        <definition name="PropertyListDictionary" localizedString="PropertyListDictionary" class="Dictionary" defaultDictionaryValueClass="PropertyDictionary" defaultKeyName="New Property"></definition>
+        <definition name="PropertyDictionary" localizedString="PropertyDictionary" class="Dictionary" defaultKeyName="New Property Key">
+            <dictionaryKeys>
+                <key name="AppleEventCode" localizedString="AppleEvent Code" class="AppleEventCodeClass" use="required"></key>
+                <key name="Type" localizedString="Class" class="PropertyClassString" use="required"></key>
+                <key name="ReadOnly" localizedString="Read-only" class="BooleanStringDefaultNO" use="required"></key>
+                <key name="LocationRequiredToCreate" localizedString="LocationRequiredToCreate" class="BooleanStringDefaultNO" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="PropertyClassString" localizedString="PropertyClassString" class="String" default=""></definition>
+        <definition name="CommandListDictionary" localizedString="CommandListDictionary" class="Dictionary" defaultDictionaryValueClass="CommandDictionary" defaultKeyName="New Command"></definition>
+        <definition name="CommandDictionary" localizedString="CommandDictionary" class="Dictionary" defaultKeyName="New Command Key">
+            <dictionaryKeys>
+                <key name="AppleEventClassCode" localizedString="AppleEvent Class Code" class="AppleEventCodeClass" use="required"></key>
+                <key name="AppleEventCode" localizedString="AppleEvent Code" class="AppleEventCodeClass" use="required"></key>
+                <key name="Arguments" localizedString="Arguments" class="ArgumentListDictionary" use="default"></key>
+                <key name="CommandClass" localizedString="Command Class" class="CommandClassString" use="required"></key>
+                <key name="ResultAppleEventCode" localizedString="Result AppleEvent Code" class="AppleEventCodeClass" use="required"></key>
+                <key name="Type" localizedString="Type" class="CommandTypeString" use="required"></key>
+                <key name="UnnamedArgument" localizedString="UnnamedArgument" class="UnnamedArgumentDictionary" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="CommandClassString" localizedString="CommandClassString" class="String" default="NSScriptCommand"></definition>
+        <definition name="CommandTypeString" localizedString="CommandTypeString" class="String" default=""></definition>
+        <definition name="ArgumentListDictionary" localizedString="ArgumentListDictionary" class="Dictionary" defaultDictionaryValueClass="ArgumentDictionary" defaultKeyName="New Argument"></definition>
+        <definition name="ArgumentDictionary" localizedString="ArgumentDictionary" class="Dictionary" defaultKeyName="New Argument Key">
+            <dictionaryKeys>
+                <key name="AppleEventCode" localizedString="AppleEvent Code" class="AppleEventCodeClass" use="required"></key>
+                <key name="Optional" localizedString="Optional" class="BooleanStringDefaultNO" use="required"></key>
+                <key name="Type" localizedString="Type" class="ArgumentTypeString" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="ArgumentTypeString" localizedString="ArgumentTypeString" class="String" default="NSObject"></definition>
+        <definition name="SynonymListDictionary" localizedString="SynonymListDictionary" class="Dictionary" defaultDictionaryValueClass="SynonymString" defaultKeyName="New Synonym"></definition>
+        <definition name="SynonymString" localizedString="Original Name" class="String" default="Original Name"></definition>
+        <definition name="AppleEventCodeClass" localizedString="&lt;four character code>" class="String" default="****"></definition>
+        <definition name="BooleanStringDefaultNO" localizedString="BooleanStringDefaultNO" class="String" default="NO">
+            <allowableValues>
+                <value name="NO" localizedString="No"></value>
+                <value name="YES" localizedString="Yes"></value>
+            </allowableValues>
+        </definition>
+        <definition name="BooleanStringDefaultYES" localizedString="BooleanStringDefaultYES" class="String" default="YES">
+            <allowableValues>
+                <value name="NO" localizedString="No"></value>
+                <value name="YES" localizedString="Yes"></value>
+            </allowableValues>
+        </definition>
+        <definition name="EnumerationListDictionary" localizedString="EnumerationListDictionary" class="Dictionary" defaultDictionaryValueClass="EnumerationDictionary"></definition>
+        <definition name="EnumerationDictionary" localizedString="EnumerationDictionary" class="Dictionary">
+            <dictionaryKeys>
+                <key name="AppleEventCode" localizedString="AppleEventCode" class="AppleEventCodeClass" use="required"></key>
+                <key name="Enumerators" localizedString="Enumerators" class="AppleEventCodeDictionary" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="AppleEventCodeDictionary" localizedString="EnumeratorDictionary" class="Dictionary" defaultDictionaryValueClass="AppleEventCodeClass"></definition>
+        <definition name="StringArray" localizedString="StringArray" class="Array" arrayElementClass="String"></definition>
+        <definition name="SupportedCommandDictionary" localizedString="SupportedCommandDictionary" class="Dictionary" defaultDictionaryValueClass="String"></definition>
+        <definition name="UnnamedArgumentDictionary" localizedString="UnnamedArgumentDictionary" class="Dictionary">
+            <dictionaryKeys>
+                <key name="Optional" localizedString="Optional" class="BooleanStringDefaultNO" use="required"></key>
+                <key name="Type" localizedString="Type" class="String" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+    </extension>
+    <extension point="com.apple.xcode.plist.structure-definition" name="AppleScript Terminology" id="com.apple.xcode.plist.structure-definition.script-terminology">
+        <definition name="_root_" localizedString="AppleScript Suite Terminology" class="Dictionary">
+            <dictionaryKeys>
+                <key name="Classes" localizedString="Classes" class="ClassListDictionary" use="default"></key>
+                <key name="Commands" localizedString="Commands" class="CommandListDictionary" use="default"></key>
+                <key name="Description" localizedString="Description" class="DescriptionString" use="required"></key>
+                <key name="Name" localizedString="Name" class="NameString" use="required"></key>
+                <key name="Synonyms" localizedString="Synonyms" class="SynonymListDictionary" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="NameString" localizedString="NameString" class="String" default=""></definition>
+        <definition name="DescriptionString" localizedString="DescriptionString" class="String" default="Defines classes and commands specific to xxxx."></definition>
+        <definition name="ClassListDictionary" localizedString="New Class" class="Dictionary" defaultDictionaryValueClass="ClassDictionary" defaultKeyName="New Class"></definition>
+        <definition name="ClassDictionary" localizedString="New Class Key" class="Dictionary" defaultKeyName="New Class Key">
+            <dictionaryKeys>
+                <key name="Attributes" localizedString="Attributes" class="AttributeListDictionary" use="default"></key>
+                <key name="Description" localizedString="Description" class="ClassDescriptionString" use="default"></key>
+                <key name="Name" localizedString="Name" class="String" use="required"></key>
+                <key name="PluralName" localizedString="Plural Name" class="String" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="ClassDescriptionString" localizedString="ClassDescriptionString" class="String" default="This class represents xxxx."></definition>
+        <definition name="AttributeListDictionary" localizedString="New Attribute" class="Dictionary" defaultDictionaryValueClass="AttributeDictionary" defaultKeyName="New Attribute"></definition>
+        <definition name="AttributeDictionary" localizedString="New Attribute Key" class="Dictionary" defaultKeyName="New Attribute Key">
+            <dictionaryKeys>
+                <key name="Sex" localizedString="Attribute Gender" class="GenderString" use="default"></key>
+                <key name="Description" localizedString="Description" class="AttributeDescriptionString" use="default"></key>
+                <key name="Name" localizedString="Name" class="String" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="AttributeDescriptionString" localizedString="AttributeDescriptionString" class="String" default="This attribute is for xxxx."></definition>
+        <definition name="CommandListDictionary" localizedString="New Command" class="Dictionary" defaultDictionaryValueClass="CommandDictionary" defaultKeyName="New Command"></definition>
+        <definition name="CommandDictionary" localizedString="New Command Key" class="Dictionary" defaultKeyName="New Command Key">
+            <dictionaryKeys>
+                <key name="Arguments" localizedString="Arguments" class="ArgumentListDictionary" use="default"></key>
+                <key name="Description" localizedString="Description" class="CommandDescriptionString" use="default"></key>
+                <key name="IsVerb" localizedString="Is Verb" class="BooleanStringDefaultYES" use="default"></key>
+                <key name="Name" localizedString="Name" class="String" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="CommandDescriptionString" localizedString="CommandDescriptionString" class="String" default="This command does xxxx."></definition>
+        <definition name="ArgumentListDictionary" localizedString="New Argument" class="Dictionary" defaultDictionaryValueClass="ArgumentDictionary" defaultKeyName="New Argument"></definition>
+        <definition name="ArgumentDictionary" localizedString="New Argument Key" class="Dictionary" defaultKeyName="New Argument Key">
+            <dictionaryKeys>
+                <key name="Sex" localizedString="Argument Gender" class="GenderString" use="default"></key>
+                <key name="Description" localizedString="Description" class="ArgumentDescriptionString" use="default"></key>
+                <key name="Name" localizedString="Name" class="String" use="required"></key>
+                <key name="Number" localizedString="Number" class="PluralityString" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="ArgumentDescriptionString" localizedString="ArgumentDescriptionString" class="String" default="This argument specifies xxxx."></definition>
+        <definition name="SynonymListDictionary" localizedString="New Synonym" class="Dictionary" defaultDictionaryValueClass="SynonymDictionary" defaultKeyName="New Synonym"></definition>
+        <definition name="SynonymDictionary" localizedString="New Synonym Key" class="Dictionary" defaultKeyName="New Synonym Key">
+            <dictionaryKeys>
+                <key name="Description" localizedString="Description" class="ClassDescriptionString" use="default"></key>
+                <key name="Name" localizedString="Name" class="String" use="required"></key>
+                <key name="PluralName" localizedString="Plural Name" class="String" use="required"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="BooleanStringDefaultYES" localizedString="BooleanStringDefaultYES" class="String" default="YES">
+            <allowableValues>
+                <value name="NO" localizedString="No"></value>
+                <value name="YES" localizedString="Yes"></value>
+            </allowableValues>
+        </definition>
+        <definition name="GenderString" localizedString="GenderString" class="String" default="none">
+            <allowableValues>
+                <value name="none" localizedString="none"></value>
+                <value name="masculine" localizedString="masculine"></value>
+                <value name="feminine" localizedString="feminine"></value>
+            </allowableValues>
+        </definition>
+        <definition name="PluralityString" localizedString="PluralityString" class="String" default="singular">
+            <allowableValues>
+                <value name="singular" localizedString="singular"></value>
+                <value name="plural" localizedString="plural"></value>
+            </allowableValues>
+        </definition>
+    </extension>
+</plugin>

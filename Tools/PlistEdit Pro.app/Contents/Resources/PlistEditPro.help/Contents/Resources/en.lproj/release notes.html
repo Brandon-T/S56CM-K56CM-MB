@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link media="all" rel="stylesheet" href="task_style.css"/>
+<title>Release Notes</title>
+
+</head>
+<body>
+<div id="banner">
+	<div id="machelp">
+	<a class="bread" href="table%20of%20contents.html">Table of Contents</a>
+	</div>
+	<div id="index">
+	<a class="leftborder" href="_page_index.html">index</a>
+	</div>
+</div>
+<div id="mainbox">
+	<div id="caticon">
+	<img width="32" height="32" alt="PlistEdit Pro Icon" src="PlistEditPro.png"/>
+	</div>
+</div>
+
+
+
+<div id="pagetitle">
+	<h1>Release Notes</h1><br/>
+</div>
+
+<style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 12.0px 'Lucida Grande'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 12.0px 'Lucida Grande'; min-height: 15.0px}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 12.0px 'Lucida Grande'}
+    ul.ul1 {list-style-type: disc}
+    ul.ul2 {list-style-type: square}
+  </style>
+
+<p class="p1"><b>Version 1.8 (released 10/10/2014)</b></p>
+<ul class="ul1">
+  <li class="li1">PlistEdit Pro now requires OS X 10.9 or later</li>
+  <li class="li1">We now prevent changing the class of the root dictionary when editing a preferences file</li>
+  <li class="li1">Saving preferences plists on Mavericks and later now pushes changes to CFPreferences when appropriate</li>
+  <li class="li1">We can now read Xcode 5/6 structure definition files</li>
+  <li class="li1">Removed the autocompletion feature, due to buginess and lack of time to fix it</li>
+  <li class="li1">We do a one time "forgetting" of font prefs when launching on Yosemite, to ensure that new system fonts are used where appropriate. If you customized your fonts previously, you may need to reapply those changes.</li>
+  <li class="li1">Adding a preference to enable or disable autosaving</li>
+  <li class="li1">When editing number values, we now omit the thousands separators to make copying values to other programs easier</li>
+  <li class="li1">We now automatically save the window configuration used when opening documents, rather than having an explicit "Save Window Configuration" menu item</li>
+  <li class="li1">We now save and restore the state of the "Show Raw Keys and Values" setting when opening documents</li>
+  <li class="li1">The "Paste as Child" command will now insert a copy into each selected object when there is a multiple selection</li>
+  <li class="li1">We now enforce that the root object of a JSON file is either an array or dictionary</li>
+  <li class="li1">Switching to save as JSON in the save panel no longer appends an extra .plist extension to the saved file</li>
+  <li class="li1">Fixed a bug where PlistEdit Pro could hang after trying to save a document with a syntax error</li>
+  <li class="li1">Fixed a crasher when re-reading a changed structure definition file from disk</li>
+  <li class="li1">Find/replace is now done using find bars in the outline/text views, rather than a separate find panel</li>
+  <li class="li1">Elements in a structure definition can now be dragged to reorder them</li>
+  <li class="li1">Save panel no longer tries to append a .plist extension when the default file format is JSON</li>
+  <li class="li1">After deleting an object, we now select the adjacent object rather than having an empty selection</li>
+  <li class="li1">Find/replace now works properly with localized key names when using a structure definition</li>
+  <li class="li1">Removed the preference to have the OS write prefs plists as XML, since it'\''s no longer supported</li>
+  <li class="li1">Fixed a hang/crash when performing a "Replace All" where the find string is a substring of the replacement string</li>
+  <li class="li1">Fixed an issue where the pledit command line tool would not open PlistEdit Pro properly</li>
+</ul>
+<p class="p1"><b>Version 1.7.4 (released 7/11/2012)</b></p>
+<ul class="ul1">
+  <li class="li1">PlistEdit Pro's crash reporter now waits until actually submitting a crash report to attempt accessing the address book (which causes a system prompt to appear on 10.8)</li>
+  <li class="li1">PlistEdit Pro is now signed for running with Gatekeeper on Mountain Lion</li>
+  <li class="li1">Added a workaround for a Mountain Lion bug that would cause PlistEdit Pro to "forget" any previously changed preferences settings and registration info</li>
+</ul>
+<p class="p1"><b>Version 1.7.3 (released 12/05/2011)</b></p>
+<ul class="ul1">
+  <li class="li1">Fixed an issue where entered registration info wouldn't "stick" for some users</li>
+</ul>
+<p class="p1"><b>Version 1.7.2 (released 11/15/2011)</b></p>
+<ul class="ul1">
+  <li class="li1">Fixed a bug where PlistEdit Pro could hang or take up background CPU when editing with autocomplete enabled</li>
+</ul>
+<p class="p1"><b>Version 1.7.1 (released 11/09/2011)</b></p>
+<ul class="ul1">
+  <li class="li1">We now read plists created by NSKeyedArchiver properly again (regression from 1.6)</li>
+  <li class="li1">Fixed a bug where, in certain circumstances, performing a find with the "Wrap around" option enabled would cause PlistEdit Pro to hang</li>
+  <li class="li1">Fixed a crash that could occur when reopening multiple documents at launch time when running on Lion</li>
+  <li class="li1">The registration panel now works properly when running with German as your primary language</li>
+  <li class="li1">When editing a data object, you can now enter hexadecimal text with newlines</li>
+  <li class="li1">Fixed a crasher that could occur when changing an object from a string to a date</li>
+  <li class="li1">Fixed a problem that could cause PlistEdit Pro to crash on launch when trying to read certain types of older registration info</li>
+</ul>
+<ul class="ul1">
+  <li class="li1"><b>Version 1.7 (released 09/15/2011)</b></li>
+</ul>
+<ul class="ul1">
+  <li class="li1">Updated keyboard navigation to match system-wide behavior</li>
+  <li class="li1">Added "New Dictionary/Array With Selection" menu commands</li>
+  <li class="li1">PlistEdit Pro is now 64-bit and requires OS X 10.6 or later</li>
+  <li class="li1">Added support for autosaving and Versions in Lion</li>
+  <li class="li1">Added support for Resume on Lion, restoring all window state between launches</li>
+  <li class="li1">Fixed a bug where the format popup in the toolbar would initially read "XML" when opening a JSON file</li>
+  <li class="li1">Removed the preference to set a custom date formatting string</li>
+  <li class="li1">Fixed a bug where table columns would not be restored properly for some saved property list browsers</li>
+  <li class="li1">When converting from plist to JSON, data objects now get converted to equivalent hex strings</li>
+  <li class="li1">Added buttons to the save panel that let you specify indented/condensed formatting when saving a JSON file</li>
+  <li class="li1">Increased the maximum width of the "Value" column, for easier viewing of long strings</li>
+  <li class="li1">When saving to a file with a .json extension, we now automatically convert the underlying property list to JSON format if necessary</li>
+  <li class="li1">Removed Xcode integration preference, as it is no longer viable with Xcode 4</li>
+</ul>
+<p class="p1"><b>Version 1.6 (released 01/28/2011)</b></p>
+<ul class="ul1">
+  <li class="li1">Updated iTunes and iPhoto structure definitions with new data from latest versions of iTunes/iPhoto</li>
+  <li class="li1">Property list browsers now refresh their file list after changing content find options</li>
+  <li class="li1">Trying to open a favorite whose file is missing now displays an error instead of prompting for admin privileges</li>
+  <li class="li1">PlistEdit Pro now supports reading and writing JSON files, and converting between plist and JSON formats</li>
+  <li class="li1">Removed the "Display alternating row colors in tables" preference (we now always use alternating row colors)</li>
+  <li class="li1">Removed the "Don't shared find string with other applications" preference</li>
+  <li class="li1">The label portion of custom formatted data is now a lighter shade of gray when selected, for improved visibility</li>
+  <li class="li1">When a data object's row is selected, the hexadecimal text is now drawn in white instead of black</li>
+  <li class="li1">We now always move dragged plist objects instead of copying, unless dragging an item into itself or to another document</li>
+  <li class="li1">Fixed a bug where changes made to the favorites list would not be remembered between launches</li>
+  <li class="li1">Fixed a bug where changing an item from a dictionary to an array could cause PlistEdit Pro to hang</li>
+  <li class="li1">Fixed a memory leak that would not reclaim some memory when closing documents</li>
+  <li class="li1">Tweaked a couple things to improve document load time (up to 25% improvement for large files)</li>
+  <li class="li1">Indexing for autocompletion is now performed in the background, improving the speed of opening documents</li>
+  <li class="li1">Fixed an issue that could slow down open and find operations when using a structure definition that uses allowable value lists for some elements</li>
+  <li class="li1">Fixed the "Open Help in Browser" menu item</li>
+  <li class="li1">Editing using the Storage Size formatter now accepts fractional values correctly</li>
+  <li class="li1">Fixed a bug where entering a negative floating point value for a number would not set the correct value</li>
+  <li class="li1">Fixed a crash that could occur when creating a child of a variant dictionary while using a structure definition</li>
+  <li class="li1">Variant keys and values are now saved properly in structure definitions</li>
+</ul>
+<p class="p1"><b>Version 1.5 (released 10/31/2009)</b></p>
+<ul class="ul1">
+  <li class="li1">Added a structure definition for hidden Xcode preferences</li>
+  <li class="li1">Added a new data formatter for viewing/editing Snow Leopard bookmark data objects</li>
+  <li class="li1">Fixed a bug where keyboard shortcuts in the favorites browser would not appear in the correct rows</li>
+  <li class="li1">Removed the scripts menu, since it's just as easy to use the system provided one now<span class="Apple-converted-space"></span></li>
+  <li class="li1">Removed the "Automatically begin editing newly created objects" preference.<span class="Apple-converted-space"> </span>The new behavior is to always begin editing newly created objects.</li>
+  <li class="li1">We now provide a custom interface for creating and editing property list structure definitions</li>
+  <li class="li1">Added a "View By Subkey" command, to allow previewing a particular key in a list of dictionaries without having to expand each one</li>
+  <li class="li1">Added a "Sort By Subkey" command that allows sorting an array of dictionaries based on one of their keys</li>
+  <li class="li1">Fixed a bug where the incorrect row was colored red when a file in a property list browser could not be found</li>
+  <li class="li1">Fixed a problem that would cause PlistEdit Pro to hang when attempting to save a file on a read-only volume</li>
+  <li class="li1">Fixed some selection glitches when using the "Select All" command</li>
+  <li class="li1">Opening the find panel no longer causes Spaces to switch to a different space.<span class="Apple-converted-space"></span></li>
+  <li class="li1">Improved speed of opening files when autocompletion is enabled.<span class="Apple-converted-space"></span></li>
+  <li class="li1">We now support the new XML based property list structure definitions introduced by Xcode 3.1<span class="Apple-converted-space"></span></li>
+  <li class="li1">Removed the preference to control undo levels</li>
+</ul>
+<p class="p1"><b>Version 1.4.2 (released 08/25/2009)</b></p>
+<ul class="ul2">
+  <li class="li1">Fixed a bug where files would not open properly under Snow Leopard</li>
+</ul>
+<p class="p2"><br/></p>
+<p class="p1"><b>Version 1.4.1 (released 07/24/2008)</b></p>
+<ul class="ul2">
+  <li class="li1">Fixed a problem where some serial numbers would not work correctly on Tiger</li>
+  <li class="li1">Updated Sparkle framework to version 1.5</li>
+  <li class="li1">Fixed a few items in the German localization</li>
+  <li class="li1">Plist/preferences browsers now resolve aliases when scanning for plists</li>
+</ul>
+<p class="p2"><br/></p>
+<p class="p1"><b>Version 1.4 (released 04/17/2008)</b></p>
+<ul class="ul2">
+  <li class="li1">We now support editing any files on the system, prompting for an admin password to save changes when necessary</li>
+  <li class="li1">Added autocompletion when entering data. Suggestions for keys and values are provided based on existing content in the property list and information found in plist definitions</li>
+  <li class="li1">Plist definitions are now enabled by default. This makes autocompletion much more useful, especially when editing Info.plist files</li>
+  <li class="li1">Updated plist definition files with new keys for Leopard, and added new definitions for Xgrid, Podcast Producer, iPhoto, and iTunes</li>
+  <li class="li1">Added a new data formatter for viewing Carbon-style dates stored as a number of seconds since 01/01/1904</li>
+  <li class="li1">You can now set up and save property list browser configurations, which gives easy access to all plist files in one or more directories on your system</li>
+  <li class="li1">The minimum system requirement has changed from 10.3.9 to 10.4.0</li>
+</ul>
+<p class="p2"><br/></p>
+<p class="p1"><b>Version 1.3.1 (released 11/02/2007)</b></p>
+<ul class="ul2">
+  <li class="li1">Added new preferences for case sensitive and numeric sorting</li>
+  <li class="li1">Implemented ODB editor suite and Xcode editor interface, improving PlistEdit Pro's ability to be used as an external editor</li>
+  <li class="li1">Fixed a bug where hex data would be displayed byte swapped on Intel machines</li>
+  <li class="li1">The search field is now focused by default when opening the preferences browser</li>
+  <li class="li1">Data items now display how many bytes they contain</li>
+  <li class="li1">We now use the new yellow find indicator in Leopard</li>
+</ul>
+<p class="p2"><br/></p>
+<p class="p1"><b>Version 1.3 (released 10/10/2006)</b></p>
+<ul class="ul2">
+  <li class="li1">Added syntax coloring for XML tags in the plist text view</li>
+  <li class="li1">New data formatters allow viewing of plist values interpreted as different data types. Formatters include:</li>
+  <ul class="ul2">
+    <li class="li1">View number objects as: four character code, storage size (KB, MB, etc.), hours/minutes/seconds, hexadecimal (big and little endian), or dates expressed as time intervals</li>
+    <li class="li1">View data objects as: alias records, strings (UTF-8, UTF-16, MacOS Roman, and ASCII encodings)</li>
+  </ul>
+  <li class="li1">Added Sparkle support, allowing for automatic downloading of updates</li>
+  <li class="li1">The edit value sheet and the preferences window now remembers their position and size</li>
+  <li class="li1">Double clicking on parentheses/brackets in the text view now selects to the matching parenthesis/bracket</li>
+  <li class="li1">Tooltips are now displayed for values to large to draw in the value column (Tiger only)</li>
+  <li class="li1">Copying drag and drop of plist objects now puts a textual version in the clipboard/drag</li>
+  <li class="li1">Added toolbar buttons for Edit Value and Prefs Browser</li>
+</ul>
+<p class="p2"><br/></p>
+<p class="p1"><b>Version 1.2.1 (released 06/05/2006)</b></p>
+<ul class="ul2">
+  <li class="li1">Updated to be a Universal binary which will run on both PPC and Intel Macs. The minimum system requirement is now OS X 10.3.9</li>
+  <li class="li1">Added a new improved German localization</li>
+  <li class="li1">Editing a long hex data value in the edit sheet now properly displays the entire value</li>
+  <li class="li1">Menu items are now enabled properly when triggering a pop-up menu in the main outline view via the space bar</li>
+  <li class="li1">Added a service to open plist text in PlistEdit Pro. This also allows dragging plist text onto the dock icon to open it (Tiger only).</li>
+  <li class="li1">Added pledit command line tool, which allows opening plists and piping plist text to PlistEdit Pro</li>
+</ul>
+<p class="p2"><br/></p>
+<p class="p1"><b>Version 1.2 (released 06/22/2005)</b></p>
+<ul class="ul2">
+  <li class="li1">Added "Goto Line" command for textual editing view</li>
+  <li class="li1">Long strings and other values can now be viewed/edited in a separate sheet</li>
+  <li class="li1">You can also assign a value to multiple items at once using the edit sheet</li>
+  <li class="li1">Added a column to view the format of property list files in property list browsers</li>
+  <li class="li1">You can now do batch validation and format conversion of plist files within a property list browser</li>
+  <li class="li1">Created new property list definitions for Info.plist, Core Image, sync schemas, and launchd plists</li>
+  <li class="li1">Added new menu items to add keys defined in property list definitions</li>
+  <li class="li1">Xcode integration can now be disabled</li>
+  <li class="li1">Added new "Select Parent" menu item</li>
+  <li class="li1">When running under Tiger, you can tell the system to write preference plists as XML instead of binary</li>
+  <li class="li1">You can now tell PlistEdit Pro to check for updates on the internet</li>
+  <li class="li1">When activated, PlistEdit Pro can now detect if a file has been changed on disk and ask the user if they want to read in the new changes</li>
+</ul>
+<p class="p2"><br/></p>
+<p class="p1"><b>Version 1.1.2 (released 04/25/2005)</b></p>
+<ul class="ul2">
+  <li class="li1">Fixed a problem that prevented the prefs browser from displaying on Tiger</li>
+  <li class="li1">The revert command now reads the contents of files that have been edited externally</li>
+  <li class="li1">Improved performance when opening large property list files with the text view hidden</li>
+  <li class="li1">Fixed a problem where some files would not display properly in property list browsers</li>
+</ul>
+<p class="p2"><br/></p>
+<p class="p1"><b>Version 1.1.1 (released 01/08/2005)</b></p>
+<ul class="ul2">
+  <li class="li1">fixed some issues in the German localization</li>
+  <li class="li1">you can now use PlistEdit Pro as an external editor for Xcode/Project Builder</li>
+  <li class="li1">you can now add a plist file directly to an open Xcode project while saving</li>
+  <li class="li1">when opening a corrupt property list, you can now examine and fix the plist text</li>
+  <li class="li1">property list browsers now support multiple selection</li>
+</ul>
+<p class="p2"><br/></p>
+<p class="p1"><b>Version 1.1 (released 08/10/2004)</b></p>
+<ul class="ul2">
+  <li class="li1">added a favorites menu, with configurable keyboard shortcuts</li>
+  <li class="li1">the preferences browser now scans subfolders of the preferences folders</li>
+  <li class="li1">added a generic property list browser, so you can view lists of plist files other than the preferences folder</li>
+  <li class="li1">added the ability to drag a folder to the application and view all the property list files within</li>
+  <li class="li1">added search by content in plist browsers</li>
+  <li class="li1">added a scripts menu</li>
+  <li class="li1">added a German localization</li>
+  <li class="li1">you can now choose what font to use in plist browsers</li>
+  <li class="li1">there is now an option to automatically start editing newly created objects</li>
+  <li class="li1">fixed a bug with input of non-English formatted numbers</li>
+</ul>
+<p class="p2"><br/></p>
+<p class="p1"><b>Version 1.0.1 (released 03/10/2004)</b></p>
+<ul class="ul2">
+  <li class="li1">numbers are now formatted correctly in non-US localizations</li>
+  <li class="li1">added support for reading/writing 'plst' resources</li>
+  <li class="li1">we now handle page up/down and home/end keys in the outline view</li>
+</ul>
+<p class="p2"><br/></p>
+<p class="p1"><b>Version 1.0 (released 03/04/2004)</b></p>
+<ul class="ul2">
+  <li class="li1">Initial release</li>
+</ul>
+
+
+<div style="height: 30px;">
+
+</div>
+
+</body>
+</html>
+

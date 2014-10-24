@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin name="" id="" version="">
+    <extension point="com.apple.xcode.plist.structure-definition" name="Xgrid Batch File" id="com.fatcatsoftware.xgrid-batch-file">
+        <definition name="_root_" localizedString="Xgrid Batch File" class="Array" arrayElementClass="Job"></definition>
+        <definition name="ARTCondition" class="Dictionary">
+            <dictionaryKeys>
+                <key name="artMin" localizedString="artMin" class="Number" use="default"></key>
+                <key name="artEqual" localizedString="artEqual" class="Number" use="default"></key>
+                <key name="artMax" localizedString="artMax" class="Number" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="ARTSpecification" class="Dictionary">
+            <dictionaryKeys>
+                <key name="artData" localizedString="artData" class="Data" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="InputFile" class="Dictionary">
+            <dictionaryKeys>
+                <key name="fileData" localizedString="fileData" class="Data" use="default"></key>
+                <key name="isExecutable" localizedString="isExecutable" class="Boolean" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="TaskSpecificationDictionary" class="Dictionary" defaultDictionaryValueClass="TaskSpecification"></definition>
+        <definition name="ARTConditionDictionary" class="Dictionary" defaultDictionaryValueClass="ARTCondition"></definition>
+        <definition name="PrototypeDictionary" class="Dictionary" defaultDictionaryValueClass="Prototype"></definition>
+        <definition name="ARTSpecificationDictionary" class="Dictionary" defaultDictionaryValueClass="ARTSpecification"></definition>
+        <definition name="InputFileDictionary" class="Dictionary" defaultDictionaryValueClass="InputFile"></definition>
+        <definition name="StringDictionary" class="Dictionary" defaultDictionaryValueClass="String"></definition>
+        <definition name="Job" class="Dictionary">
+            <dictionaryKeys>
+                <key name="taskSpecifications" localizedString="taskSpecifications" class="TaskSpecificationDictionary" use="default"></key>
+                <key name="artConditions" localizedString="artConditions" class="ARTConditionDictionary" use="optional"></key>
+                <key name="submissionIdentifier" localizedString="submissionIdentifier" class="String" use="default"></key>
+                <key name="schedulerParameters" localizedString="schedulerParameters" class="SchedulerParamsDict" use="optional"></key>
+                <key name="name" localizedString="name" class="String" use="default"></key>
+                <key name="taskPrototypes" localizedString="taskPrototypes" class="PrototypeDictionary" use="default"></key>
+                <key name="artSpecifications" localizedString="artSpecifications" class="ARTSpecificationDictionary" use="optional"></key>
+                <key name="applicationIdentifier" localizedString="applicationIdentifier" class="String" use="default"></key>
+                <key name="inputFiles" localizedString="inputFiles" class="InputFileDictionary" use="default"></key>
+                <key name="notificationEmail" localizedString="notificationEmail" class="String" use="default"></key>
+                <key name="schedulerHints" localizedString="schedulerHints" class="StringDictionary" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="StringArray" class="Array" arrayElementClass="String"></definition>
+        <definition name="Prototype" class="Dictionary">
+            <dictionaryKeys>
+                <key name="command" localizedString="command" class="String" use="default"></key>
+                <key name="arguments" localizedString="arguments" class="StringArray" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="SchedulerParamsDict" class="Dictionary">
+            <dictionaryKeys>
+                <key name="tasksMustStartSimultaneously" localizedString="tasksMustStartSimultaneously" class="Boolean" use="optional"></key>
+                <key name="dependsOnJobs" localizedString="dependsOnJobs" class="StringArray" use="optional"></key>
+                <key name="minimumTaskCount" localizedString="minimumTaskCount" class="Number" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="TaskSpecification" class="Dictionary">
+            <dictionaryKeys>
+                <key name="inputStream" localizedString="inputStream" class="String" use="default"></key>
+                <key name="environment" localizedString="environment" class="StringDictionary" use="default"></key>
+                <key name="command" localizedString="command" class="String" use="default"></key>
+                <key name="taskPrototypeIdentifier" localizedString="taskPrototypeIdentifier" class="String" use="default"></key>
+                <key name="arguments" localizedString="arguments" class="StringArray" use="default"></key>
+                <key name="dependsOnTasks" localizedString="dependsOnTasks" class="StringArray" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+    </extension>
+</plugin>

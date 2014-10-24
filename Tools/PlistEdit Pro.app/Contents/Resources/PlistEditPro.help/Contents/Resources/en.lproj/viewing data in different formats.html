@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link media="all" rel="stylesheet" href="task_style.css"/>
+<title>Viewing data in different formats</title>
+
+</head>
+<body>
+<div id="banner">
+	<div id="machelp">
+	<a class="bread" href="table%20of%20contents.html">Table of Contents</a>
+	</div>
+	<div id="index">
+	<a class="leftborder" href="_page_index.html">index</a>
+	</div>
+</div>
+<div id="mainbox">
+	<div id="caticon">
+	<img width="32" height="32" alt="PlistEdit Pro Icon" src="PlistEditPro.png"/>
+	</div>
+</div>
+
+
+
+<div id="pagetitle">
+	<h1>Viewing data in different formats</h1><br/>
+</div>
+
+<style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 16.0px; font: 12.0px 'Lucida Grande'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 16.0px; font: 12.0px 'Lucida Grande'}
+    span.s1 {text-decoration: underline}
+    table.t1 {width: 755.0px}
+    td.td1 {width: 737.0px; background-color: #ebf1ff; padding: 9.0px 9.0px 9.0px 9.0px}
+    td.td2 {width: 173.0px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: transparent transparent #d6d6d6 transparent; padding: 9.0px 9.0px 9.0px 9.0px}
+    td.td3 {width: 546.0px; border-style: solid; border-width: 0.0px 0.0px 1.0px 0.0px; border-color: transparent transparent #d6d6d6 transparent; padding: 9.0px 9.0px 9.0px 9.0px}
+    td.td4 {width: 546.0px; padding: 9.0px 9.0px 9.0px 9.0px}
+    td.td5 {width: 181.0px; padding: 0.0px 5.0px 0.0px 5.0px}
+    td.td6 {width: 554.0px; padding: 0.0px 5.0px 0.0px 5.0px}
+  </style>
+
+<p class="p1">Property lists allow for storage of a wide variety of different data types. There are only seven basic types to work with, but data can be manipulated in many different ways to be stored as one of these seven types. However, this sometimes means transforming the data into a form that is not easily recognized or edited when viewing the property list.</p>
+<p class="p1"><b>Formatters</b></p>
+<p class="p1">PlistEdit Pro helps alleviate this problem by providing <b>formatters</b> for many common types of data that have to be manipulated to be stored in a property list. To view a value using a formatter, select the row you want to view and select the data type you want to view it as using the "View As" submenu in the Edit menu (or by control-clicking and selecting from the contextual menu).</p>
+<p class="p1">Below is a list of the formatters that are included with the current version of PlistEdit Pro:</p>
+<table width="755.0" cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td colspan="4" valign="middle" class="td1">
+        <p class="p2"><b>Number</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p1">HMS (hours/minutes/seconds)</p>
+      </td>
+      <td colspan="3" valign="top" class="td3">
+        <p class="p1">If a time value is stored in a number, this formatter can be used to interpret the number as a number of seconds and display the value divided up into hours, minutes, and seconds. For example, if the base value of the number is 3672, using the HMS formatter will display the value as 1:01:12 (one hour, one minute, and twelve seconds).</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p1">Hex (big-endian or little-endian)</p>
+      </td>
+      <td colspan="3" valign="top" class="td3">
+        <p class="p1">Displays the number value as either big-endian or little-endian hexadecimal. Values are interpreted as signed integers and padded with zeros up to the nearest number of bytes that is a power of two. Any decimal portion of a floating-point number will be ignored.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p1">OSType (a.k.a. four character codes)</p>
+      </td>
+      <td colspan="3" valign="top" class="td3">
+        <p class="p1">OSType values are used in many ways in Mac OS X as an easily readable four character code that is actually stored as a 32 bit integer. These values are often stored in property lists as their numeric value, which is not easily readable. Using this formatter will interpret and display a number as a four character OSType.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p1">Storage size</p>
+      </td>
+      <td colspan="3" valign="top" class="td3">
+        <p class="p1">Useful for numbers used to store file sizes as a raw number of bytes. The storage size formatter will instead display the number as a number of KB, MB, GB, or TB.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p1">Time interval date</p>
+      </td>
+      <td colspan="3" valign="top" class="td3">
+        <p class="p1">While property lists do provide a specific date type for storing dates, in some places you will still see dates stored as a time interval from a certain starting date. PlistEdit Pro provides formatters for interpreting these numbers as UNIX-style dates, using a reference date of 1/1/1970, Cocoa-style dates, which use a reference date of 1/1/2001, or Carbon-style dates, which start at 1/1/1904.</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" valign="middle" class="td1">
+        <p class="p2"><b>Data</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p1">Alias record</p>
+      </td>
+      <td colspan="3" valign="top" class="td3">
+        <p class="p1">An alias record in Mac OS X is an opaque data type that can be stored as a chunk of data. The most common storage method is in the resource fork of the alias files you can create using the Finder, but many programs also store aliases internally using data objects in property lists. This formatter will attempt to interpret the data object as an alias record and display the path the alias resolves to. If the data object is not an alias, or cannot be resolved, an error message is displayed instead of the path.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td2">
+        <p class="p1">Strings (ASCII, MacOS Roman, UTF-8, or UTF-16)</p>
+      </td>
+      <td colspan="3" valign="top" class="td4">
+        <p class="p1">This set of formatters will interpret the data object as a string encoded using a certain encoding.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1">Bookmark data</p>
+      </td>
+      <td colspan="3" valign="top" class="td6">
+        <p class="p1">Bookmarks are a new data type introduced in Snow Leopard.<span class="Apple-converted-space"> </span>They function very similarly to aliases, but are accessed through the CFURL/NSURL APIs.<span class="Apple-converted-space"> </span>This formatter behaves the same as the one for alias records, only translating to/from bookmark data blobs instead of alias record data blobs.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p1">Note that not only do formatters allow you to view data as different types, they also allow you to edit the data in the same form. For example, you can type in a new hex value for a number, or type in a new path to make an alias record point to a different location.</p>
+<p class="p1"><b>View By Subkey</b></p>
+<p class="p1">When viewing a list of <a href="dictionaries.html"><span class="s1">dictionaries</span></a>, it's often difficult to find a particular dictionary, since the only value that's displayed by default for each dictionary is the number of key/value pairs it contains. If you select such a list and use the "View By Subkey" menu command, you can select a key whose value will be displayed next to the dictionary. This makes it easy to find a particular dictionary in a large list without having to open each dictionary to see its contents.</p>
+
+
+<div style="height: 30px;">
+
+</div>
+
+</body>
+</html>
+

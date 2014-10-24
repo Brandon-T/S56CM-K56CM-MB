@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link media="all" rel="stylesheet" href="task_style.css"/>
+<title>Dictionaries</title>
+
+</head>
+<body>
+<div id="banner">
+	<div id="machelp">
+	<a class="bread" href="table%20of%20contents.html">Table of Contents</a>
+	</div>
+	<div id="index">
+	<a class="leftborder" href="_page_index.html">index</a>
+	</div>
+</div>
+<div id="mainbox">
+	<div id="caticon">
+	<img width="32" height="32" alt="PlistEdit Pro Icon" src="PlistEditPro.png"/>
+	</div>
+</div>
+
+
+
+<div id="pagetitle">
+	<h1>Dictionaries</h1><br/>
+</div>
+
+<style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Lucida Grande'}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Lucida Grande'; min-height: 15.0px}
+    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Lucida Grande'}
+    ul.ul1 {list-style-type: disc}
+    ul.ul2 {list-style-type: hyphen}
+  </style>
+
+<p class="p1"><br/></p>
+<p class="p2"><img src="dictionaries.dictionary.png" width="871" height="344" alt="dictionary.png"/></p>
+<p class="p3"><br/></p>
+<p class="p4">When selecting a dictionary element, you will see the controls above for editing the definition element.</p>
+<p class="p5"><br/></p>
+<ul class="ul1">
+  <li class="li4"><b>Default child class.</b> Allows you to specify what class should be used by default when creating a new child object for a dictionary of this type. For example, if you're editing an class for a dictionary that will contain boolean values, you can select the Boolean class from this pop-up, and any new objects created in that dictionary will be booleans by default.</li>
+  <li class="li4"><b>Default key name</b>. Similarly, you can also specify what key string should be used for newly created children of the dictionary. PlistEdit Pro uses "New Item" by default when creating, but for example if you want all the keys for a dictionary to be reverse domain name style strings, you could specify "com.mycompany.mykey" as the default key name, which would give the user an idea of what form of key they should be using for this dictionary.</li>
+  <li class="li4"><b>Identifying key</b>. Specifies a key of the dictionary whose value should be displayed in the Value column for the dictionary when editing a property list file. For example, specifying the "CFBundleName" key for dictionaries in the CFBundleDocumentTypes array in an Info.plist file will display each document type's name in the row for that document type's dictionary, making it easy to scan the list of document types to find the one you want.</li>
+  <li class="li4"><b>Variant key</b>. Specifies a key to identify this element as being the one to use for a <a href="variant%20dictionaries.html">variant dictionary</a>.</li>
+  <li class="li4"><b>Variant value</b>. Specifies a value to identify this element as being the one to use for a <a href="variant%20dictionaries.html">variant dictionary</a>.</li>
+</ul>
+<p class="p5"><br/></p>
+<p class="p4">Underneath those controls is a table that lets you specify how to handle one or more specifc keys stored in this type of dictionary. Each row has the following attributes:</p>
+<p class="p5"><br/></p>
+<ul class="ul1">
+  <li class="li4"><b>Key.</b> This is the dictionary key that you want to define behavior for.</li>
+  <li class="li4"><b>Localized string.</b> This string, if provided, will be displayed in the Key column when editing the property list instead of the actual key. This allows the definition designer to provide the user with a clearer meaning of the key's purpose than might be discernable from the raw key value.</li>
+  <li class="li4"><b>Class.</b> This specifies what class the object stored under this key in the dictionary should be. This is the main way that classes are assigned in a property list with multiple levels of hierarchy, with each dictionary defining classe for its children based on their key.</li>
+  <li class="li4"><b>Usage.</b> This defines how the key is used in the dictionary and can have four values.<span class="Apple-converted-space"></span></li>
+  <ul class="ul2">
+    <li class="li4"><b>Required</b>:<span class="Apple-converted-space"> </span>the key must appear in the dictionary, and will result in a warning if the user attempts to delete that key<span class="Apple-converted-space"></span></li>
+    <li class="li4"><b>Default:</b><span class="Apple-converted-space"> </span>though the key isn't required, it will appear by default when a new dictionary of this class is created</li>
+    <li class="li4"><b>Optional:</b> this key has meaning in the dictionary, but is not required and will not be included in the dictionary by default</li>
+    <li class="li4"><b>Deprecated:</b> this key should no longer be used in this kind of dictionary</li>
+  </ul>
+</ul>
+
+
+<div style="height: 30px;">
+
+</div>
+
+</body>
+</html>
+

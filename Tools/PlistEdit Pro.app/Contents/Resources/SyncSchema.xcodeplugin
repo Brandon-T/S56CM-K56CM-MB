@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin name="" id="" version="">
+    <extension point="com.apple.xcode.plist.structure-definition" name="Sync Schema" id="com.fatcatsoftware.sync-schema">
+        <definition name="_root_" localizedString="Sync Schema" class="Dictionary">
+            <dictionaryKeys>
+                <key name="ManagedObjectModels" localizedString="ManagedObjectModels" class="StringArray" use="optional"></key>
+                <key name="DataClasses" localizedString="DataClasses" class="DataClassArray" use="default"></key>
+                <key name="Comment" localizedString="Comment" class="String" use="optional"></key>
+                <key name="ConflictResolverClass" localizedString="ConflictResolverClass" class="String" use="default"></key>
+                <key name="UIHelperClass" localizedString="UIHelperClass" class="String" use="optional"></key>
+                <key name="Entities" localizedString="Entities" class="EntityArray" use="default"></key>
+                <key name="StrictParsing" localizedString="StrictParsing" class="Boolean" use="optional"></key>
+                <key name="ConflictUIHelperClass" localizedString="ConflictUIHelperClass" class="String" use="default"></key>
+                <key name="Name" localizedString="Name" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="DataClassArray" class="Array" arrayElementClass="DataClass"></definition>
+        <definition name="DataClass" class="Dictionary" identifyingKey="Name">
+            <dictionaryKeys>
+                <key name="DisplayName" localizedString="DisplayName" class="String" use="default"></key>
+                <key name="Comment" localizedString="Comment" class="String" use="default"></key>
+                <key name="ImagePath" localizedString="ImagePath" class="String" use="default"></key>
+                <key name="Name" localizedString="Name" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="EntityArray" class="Array" arrayElementClass="Entity"></definition>
+        <definition name="Entity" class="Dictionary" identifyingKey="Name">
+            <dictionaryKeys>
+                <key name="Name" localizedString="Name" class="String" use="default"></key>
+                <key name="Comment" localizedString="Comment" class="String" use="default"></key>
+                <key name="DataClass" localizedString="DataClass" class="String" use="default"></key>
+                <key name="ExcludeFromDataChangeAlert" localizedString="ExcludeFromDataChangeAlert" class="Boolean" use="default"></key>
+                <key name="IdentityProperties" localizedString="IdentityProperties" class="StringArray" use="default"></key>
+                <key name="Attributes" localizedString="Attributes" class="AttributeArray" use="default"></key>
+                <key name="Parent" localizedString="Parent" class="String" use="optional"></key>
+                <key name="PropertyDependencies" localizedString="PropertyDependencies" class="StringArrayArray" use="optional"></key>
+                <key name="Relationships" localizedString="Relationships" class="RelationshipArray" use="default"></key>
+                <key name="ExtensionName" localizedString="ExtensionName" class="String" use="optional"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="AttributeArray" class="Array" arrayElementClass="Attribute"></definition>
+        <definition name="Attribute" class="Dictionary" identifyingKey="Name">
+            <dictionaryKeys>
+                <key name="Required" localizedString="Required" class="Boolean" use="optional"></key>
+                <key name="Comment" localizedString="Comment" class="String" use="default"></key>
+                <key name="ExcludeFromDataChangeAlert" localizedString="ExcludeFromDataChangeAlert" class="Boolean" use="optional"></key>
+                <key name="EnumValues" localizedString="EnumValues" class="StringArray" use="optional"></key>
+                <key name="Subtype" localizedString="Subtype" class="TypeString" use="optional"></key>
+                <key name="Type" localizedString="Type" class="TypeString" use="default"></key>
+                <key name="Name" localizedString="Name" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="RelationshipArray" class="Array" arrayElementClass="Relationship"></definition>
+        <definition name="Relationship" class="Dictionary" identifyingKey="Name">
+            <dictionaryKeys>
+                <key name="Ordering" localizedString="Ordering" class="OrderingString" use="default"></key>
+                <key name="Required" localizedString="Required" class="RequiredString" use="default"></key>
+                <key name="Target" localizedString="Target" class="StringArray" use="default"></key>
+                <key name="InverseRelationships" localizedString="InverseRelationships" class="InverseRelationshipArray" use="default"></key>
+                <key name="Comment" localizedString="Comment" class="String" use="default"></key>
+                <key name="DeleteRule" localizedString="DeleteRule" class="DeleteRuleString" use="default"></key>
+                <key name="ExcludeFromDataChangeAlert" localizedString="ExcludeFromDataChangeAlert" class="Boolean" use="default"></key>
+                <key name="Ordinality" localizedString="Ordinality" class="OrdinalityString" use="default"></key>
+                <key name="Name" localizedString="Name" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="DeleteRuleString" class="String" default="cascade">
+            <allowableValues>
+                <value name="cascade" localizedString="cascade"></value>
+                <value name="nullify" localizedString="nullify"></value>
+            </allowableValues>
+        </definition>
+        <definition name="InverseRelationshipArray" class="Array" arrayElementClass="InverseRelationship"></definition>
+        <definition name="InverseRelationship" class="Dictionary" identifyingKey="RelationshipName">
+            <dictionaryKeys>
+                <key name="EntityName" localizedString="EntityName" class="String" use="default"></key>
+                <key name="RelationshipName" localizedString="RelationshipName" class="String" use="default"></key>
+            </dictionaryKeys>
+        </definition>
+        <definition name="OrderingString" class="String" default="none">
+            <allowableValues>
+                <value name="none" localizedString="none"></value>
+                <value name="strong" localizedString="strong"></value>
+                <value name="weak" localizedString="weak"></value>
+            </allowableValues>
+        </definition>
+        <definition name="OrdinalityString" class="String" default="one">
+            <allowableValues>
+                <value name="many" localizedString="many"></value>
+                <value name="one" localizedString="one"></value>
+            </allowableValues>
+        </definition>
+        <definition name="RequiredString" class="String" default="no">
+            <allowableValues>
+                <value name="yes" localizedString="yes"></value>
+                <value name="no" localizedString="no"></value>
+            </allowableValues>
+        </definition>
+        <definition name="TypeString" class="String" default="string">
+            <allowableValues>
+                <value name="date" localizedString="date"></value>
+                <value name="boolean" localizedString="boolean"></value>
+                <value name="calendar date" localizedString="calendar date"></value>
+                <value name="data" localizedString="data"></value>
+                <value name="enum" localizedString="enum"></value>
+                <value name="number" localizedString="number"></value>
+                <value name="url" localizedString="url"></value>
+                <value name="dictionary" localizedString="dictionary"></value>
+                <value name="string" localizedString="string"></value>
+                <value name="array" localizedString="array"></value>
+                <value name="color" localizedString="color"></value>
+            </allowableValues>
+        </definition>
+        <definition name="StringArrayArray" class="Array" arrayElementClass="StringArray"></definition>
+        <definition name="StringArray" class="Array" arrayElementClass="String"></definition>
+    </extension>
+</plugin>
