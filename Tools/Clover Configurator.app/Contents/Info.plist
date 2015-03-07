@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>13F34</string>
+	<string>14B25</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDocumentTypes</key>
@@ -36,7 +36,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Clover Configurator</string>
 	<key>CFBundleIconFile</key>
-	<string>AppIcon</string>
+	<string>app</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.altervista.webwacemaster.mackie100.Clover-Configurator</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -46,15 +46,15 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>4.17.2</string>
+	<string>4.22.5</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>4.17.2</string>
+	<string>4.22.5</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>6A317</string>
+	<string>6A2008a</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
@@ -62,13 +62,13 @@
 	<key>DTSDKName</key>
 	<string>macosx10.9</string>
 	<key>DTXcode</key>
-	<string>0600</string>
+	<string>0611</string>
 	<key>DTXcodeBuild</key>
-	<string>6A317</string>
+	<string>6A2008a</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.8</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2014 mackie100. All rights reserved.</string>
+	<string>Copyright © 2015 mackie100. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
