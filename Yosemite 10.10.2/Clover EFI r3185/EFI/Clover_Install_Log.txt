@@ -1,0 +1,40 @@
+
+Clover EFI installer log - Fri Mar  6 11:04:42 EST 2015
+Installer version: v2.3k r3185 EFI bootloader
+======================================================
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *320.1 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS OSX                     159.5 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+   4:       Microsoft Basic Data USB                     159.7 GB   disk0s4
+/dev/disk1
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *24.0 GB    disk1
+   1: D3BFE2DE-3DAF-11DF-BA40-E3A556D89593               6.4 GB     disk1s1
+   2: B8CB5058-C187-4719-BAF0-379CA2D4C97E               17.6 GB    disk1s2
+/dev/disk2
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk2
+   1:                        EFI SYSTEM                  104.9 MB   disk2s1
+   2: DE94BBA4-06D1-4D40-A16A-BFD50179D6AC               943.7 MB   disk2s2
+   3:         Microsoft Reserved                         134.2 MB   disk2s3
+   4:       Microsoft Basic Data OS                      399.6 GB   disk2s4
+   5: DE94BBA4-06D1-4D40-A16A-BFD50179D6AC               471.9 MB   disk2s5
+   6:       Microsoft Basic Data Data                    577.5 GB   disk2s6
+   7: DE94BBA4-06D1-4D40-A16A-BFD50179D6AC               21.5 GB    disk2s7
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+======================================================
+Installing RC Scripts
+
+Installing RC scripts on target volume '/'
+
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
